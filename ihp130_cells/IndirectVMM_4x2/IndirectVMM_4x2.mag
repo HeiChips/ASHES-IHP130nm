@@ -1,0 +1,95 @@
+magic
+tech ihp-sg13g2
+timestamp 1771708976
+<< nwell >>
+rect 998 3 1013 653
+<< metal1 >>
+rect 893 429 1118 461
+rect 722 234 1291 265
+rect 893 174 1118 205
+<< metal2 >>
+rect 50 628 90 653
+rect 113 628 153 653
+rect 174 628 214 653
+rect 413 628 453 653
+rect 546 628 586 653
+rect 688 628 728 653
+rect 890 628 930 653
+rect 1081 628 1121 653
+rect 1283 628 1323 653
+rect 1425 628 1465 653
+rect 1558 628 1598 653
+rect 1797 628 1837 653
+rect 1858 628 1898 653
+rect 1921 628 1961 653
+<< metal3 >>
+rect -16 570 7 616
+rect 998 578 1013 608
+rect -16 501 7 547
+rect 998 509 1013 539
+rect -16 432 7 478
+rect 998 440 1013 470
+rect -16 363 7 409
+rect 998 371 1013 401
+rect -16 294 7 340
+rect 998 302 1013 332
+rect -16 225 7 271
+rect 998 233 1013 263
+rect -16 156 7 202
+rect 998 165 1013 195
+rect -16 87 7 133
+rect 998 95 1013 125
+use IndirectVMM_4x1  IndirectVMM_4x1_0 ~/IHP/ihp130-cells/IndirectVMM_4x1
+timestamp 1771701787
+transform 1 0 -526 0 1 -152
+box 510 155 1524 805
+use IndirectVMM_4x1  IndirectVMM_4x1_1
+timestamp 1771701787
+transform -1 0 2537 0 1 -152
+box 510 155 1524 805
+<< labels >>
+flabel metal2 50 628 90 653 1 FreeSans 80 0 0 0 Vsel[0]
+port 1 n
+flabel metal2 113 628 153 653 1 FreeSans 80 0 0 0 Vs[0]
+port 2 n
+flabel metal2 174 628 214 653 1 FreeSans 80 0 0 0 VINJ[0]
+port 3 n
+flabel metal2 413 628 453 653 1 FreeSans 80 0 0 0 GND
+port 4 n
+flabel metal2 546 628 586 653 1 FreeSans 80 0 0 0 Vg[0]
+port 5 n
+flabel metal2 688 628 728 653 1 FreeSans 80 0 0 0 GND
+port 4 n
+flabel metal2 890 628 930 653 1 FreeSans 80 0 0 0 VTUN
+port 6 n
+flabel metal2 1081 628 1121 653 1 FreeSans 80 0 0 0 VTUN
+port 6 n
+flabel metal2 1283 628 1323 653 1 FreeSans 80 0 0 0 GND
+port 4 n
+flabel metal2 1425 628 1465 653 1 FreeSans 80 0 0 0 Vg[1]
+port 7 n
+flabel metal2 1558 628 1598 653 1 FreeSans 80 0 0 0 GND
+port 4 n
+flabel metal2 1797 628 1837 653 1 FreeSans 80 0 0 0 VINJ[1]
+port 8 n
+flabel metal2 1858 628 1898 653 1 FreeSans 80 0 0 0 Vs[1]
+port 9 n
+flabel metal2 1921 628 1961 653 1 FreeSans 80 0 0 0 Vsel[1]
+port 10 n
+flabel metal3 -16 570 7 616 1 FreeSans 80 90 0 0 Vd_P[0]
+port 11 n
+flabel metal3 -16 501 7 547 1 FreeSans 80 90 0 0 Vd_R[0]
+port 12 n
+flabel metal3 -16 432 7 478 1 FreeSans 80 90 0 0 Vd_R[1]
+port 13 n
+flabel metal3 -16 363 7 409 1 FreeSans 80 90 0 0 Vd_P[1]
+port 14 n
+flabel metal3 -16 294 7 340 1 FreeSans 80 90 0 0 Vd_P[2]
+port 15 n
+flabel metal3 -16 225 7 271 1 FreeSans 80 90 0 0 Vd_R[2]
+port 16 n
+flabel metal3 -16 156 7 202 1 FreeSans 80 90 0 0 Vd_R[3]
+port 17 n
+flabel metal3 -16 87 7 133 1 FreeSans 80 90 0 0 Vd_P[3]
+port 18 n
+<< end >>

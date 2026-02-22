@@ -1,0 +1,52 @@
+
+Circuit 1 cell SVaricap and Circuit 2 cell SVaricap are black boxes.
+Warning: Equate pins:  cell SVaricap is a placeholder, treated as a black box.
+Warning: Equate pins:  cell SVaricap is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: SVaricap                        |Circuit 2: SVaricap                        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes SVaricap and SVaricap are equivalent.
+Flattening unmatched subcell FG_Indirect in circuit IndirectVMM_4x1 (1)(4 instances)
+
+Cell IndirectVMM_4x1 (0) disconnected node: GND
+Cell IndirectVMM_4x1 (1) disconnected node: GND
+Subcircuit summary:
+Circuit 1: IndirectVMM_4x1                 |Circuit 2: IndirectVMM_4x1                 
+-------------------------------------------|-------------------------------------------
+sg13_hv_pmos (12)                          |sg13_hv_pmos (12)                          
+SVaricap (8)                               |SVaricap (8)                               
+Number of devices: 20                      |Number of devices: 20                      
+Number of nets: 21                         |Number of nets: 21                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: IndirectVMM_4x1                 |Circuit 2: IndirectVMM_4x1                 
+-------------------------------------------|-------------------------------------------
+VINJ                                       |VINJ                                       
+Vs                                         |Vs                                         
+Vsel                                       |Vsel                                       
+Vg                                         |Vg                                         
+VTUN                                       |VTUN                                       
+Vd_R[0]                                    |Vd_R[0]                                    
+Vd_R[1]                                    |Vd_R[1]                                    
+Vd_R[2]                                    |Vd_R[2]                                    
+Vd_R[3]                                    |Vd_R[3]                                    
+Vd_P[0]                                    |Vd_P[0]                                    
+Vd_P[1]                                    |Vd_P[1]                                    
+Vd_P[2]                                    |Vd_P[2]                                    
+Vd_P[3]                                    |Vd_P[3]                                    
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes IndirectVMM_4x1 and IndirectVMM_4x1 are equivalent.
+
+Final result: Circuits match uniquely.
+.

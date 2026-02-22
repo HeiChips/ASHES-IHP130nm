@@ -1,0 +1,38 @@
+* NGSPICE file created from IndirectVMM_4x1.ext - technology: ihp-sg13g2
+
+
+.subckt IndirectVMM_4x1 Vd_R[0] Vd_R[1] Vd_R[2] Vd_R[3] Vd_P[0] Vd_P[1] Vd_P[2] Vd_P[3] Vg VTUN Vsel GND VINJ Vs
+
+* ===== Cell 0 =====
+M3  Vd_P[0] FG[0] Vmid[0] VINJ sg13_hv_pmos w=0.42u l=0.5u
+M16 Vd_R[0] FG[0] Vs        VINJ sg13_hv_pmos w=0.42u l=0.5u
+M8  Vmid[0] Vsel  VINJ      VINJ sg13_hv_pmos w=0.42u l=0.5u
+
+X15 FG[0] VTUN SVaricap l=0.5u w=0.29u
+X10 FG[0] Vg   SVaricap l=0.65u w=0.54u
+
+* ===== Cell 1 =====
+M11 Vd_P[1] FG[1] Vmid[1] VINJ sg13_hv_pmos w=0.42u l=0.5u
+M14 Vd_R[1] FG[1] Vs        VINJ sg13_hv_pmos w=0.42u l=0.5u
+M17 Vmid[1] Vsel  VINJ      VINJ sg13_hv_pmos w=0.42u l=0.5u
+
+X9  FG[1] VTUN SVaricap l=0.5u w=0.29u
+X19 FG[1] Vg   SVaricap l=0.65u w=0.54u
+
+* ===== Cell 2 =====
+M0  Vd_P[2] FG[2] Vmid[2] VINJ sg13_hv_pmos w=0.42u l=0.5u
+M13 Vd_R[2] FG[2] Vs        VINJ sg13_hv_pmos w=0.42u l=0.5u
+M6  Vmid[2] Vsel  VINJ      VINJ sg13_hv_pmos w=0.42u l=0.5u
+
+X7  FG[2] VTUN SVaricap l=0.5u w=0.29u
+X1  FG[2] Vg   SVaricap l=0.65u w=0.54u
+
+* ===== Cell 3 =====
+M2  Vd_P[3] FG[3] Vmid[3] VINJ sg13_hv_pmos w=0.42u l=0.5u
+M18 Vd_R[3] FG[3] Vs        VINJ sg13_hv_pmos w=0.42u l=0.5u
+M12 Vmid[3] Vsel  VINJ      VINJ sg13_hv_pmos w=0.42u l=0.5u
+
+X5  FG[3] VTUN SVaricap l=0.5u w=0.29u
+X4  FG[3] Vg   SVaricap l=0.65u w=0.54u
+
+.ends
