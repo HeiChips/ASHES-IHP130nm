@@ -1,0 +1,211 @@
+magic
+tech ihp-sg13g2
+timestamp 1771879710
+<< nwell >>
+rect -372 -23 172 125
+rect -372 -47 -58 -23
+rect 126 -47 172 -23
+rect -372 -53 172 -47
+<< nbase >>
+rect -58 -47 126 -23
+<< hvnmos >>
+rect 407 49 457 91
+rect 268 7 318 49
+<< hvpmos >>
+rect -147 19 -97 61
+rect 23 9 73 51
+<< hvndiff >>
+rect 373 83 407 91
+rect 373 57 380 83
+rect 396 57 407 83
+rect 373 49 407 57
+rect 457 83 491 91
+rect 457 57 468 83
+rect 484 57 491 83
+rect 457 49 491 57
+rect 234 41 268 49
+rect 234 15 241 41
+rect 257 15 268 41
+rect 234 7 268 15
+rect 318 42 352 49
+rect 318 16 329 42
+rect 345 16 352 42
+rect 318 7 352 16
+<< hvpdiff >>
+rect -184 53 -147 61
+rect -184 27 -177 53
+rect -161 27 -147 53
+rect -184 19 -147 27
+rect -97 54 -60 61
+rect -97 28 -83 54
+rect -67 28 -60 54
+rect -97 19 -60 28
+rect -14 43 23 51
+rect -14 17 -6 43
+rect 10 17 23 43
+rect -14 9 23 17
+rect 73 43 110 51
+rect 73 17 87 43
+rect 103 17 110 43
+rect 73 9 110 17
+<< hvndiffc >>
+rect 380 57 396 83
+rect 468 57 484 83
+rect 241 15 257 41
+rect 329 16 345 42
+<< hvpdiffc >>
+rect -177 27 -161 53
+rect -83 28 -67 54
+rect -6 17 10 43
+rect 87 17 103 43
+<< hvpsubdiff >>
+rect 534 41 575 50
+rect 534 13 544 41
+rect 565 13 575 41
+rect 534 5 575 13
+<< hvnsubdiff >>
+rect -300 53 -249 62
+rect -300 22 -289 53
+rect -261 22 -249 53
+rect -300 10 -249 22
+<< hvpsubdiffcont >>
+rect 544 13 565 41
+<< hvnsubdiffcont >>
+rect -289 22 -261 53
+<< poly >>
+rect -147 99 457 114
+rect -147 61 -97 99
+rect 23 51 73 69
+rect -147 -4 -97 19
+rect 268 49 318 99
+rect 407 91 457 99
+rect -53 -1 -17 0
+rect 23 -1 73 9
+rect 407 25 457 49
+rect -53 -7 73 -1
+rect -53 -27 -46 -7
+rect -29 -27 73 -7
+rect 268 -11 318 7
+rect 407 -5 416 25
+rect 450 -5 457 25
+rect 407 -14 457 -5
+rect -53 -32 73 -27
+rect -53 -34 -17 -32
+<< polycont >>
+rect -46 -27 -29 -7
+rect 416 -5 450 25
+<< metal1 >>
+rect -83 83 403 95
+rect -83 69 380 83
+rect -300 61 -249 62
+rect -83 61 -62 69
+rect -300 53 -154 61
+rect -300 22 -289 53
+rect -261 27 -177 53
+rect -161 27 -154 53
+rect -261 22 -154 27
+rect -300 19 -154 22
+rect -90 54 -62 61
+rect -90 28 -83 54
+rect -67 28 -62 54
+rect 379 57 380 69
+rect 396 57 403 83
+rect -300 10 -249 19
+rect -90 -7 -62 28
+rect -11 43 17 51
+rect -11 17 -6 43
+rect 14 17 17 43
+rect -11 9 17 17
+rect 79 43 107 51
+rect 379 49 403 57
+rect 461 83 571 91
+rect 461 57 468 83
+rect 484 57 571 83
+rect 461 49 571 57
+rect 240 43 264 49
+rect 79 17 87 43
+rect 103 41 264 43
+rect 103 21 161 41
+rect 184 21 241 41
+rect 103 17 241 21
+rect 79 9 107 17
+rect 240 15 241 17
+rect 257 15 264 41
+rect 240 7 264 15
+rect 322 42 352 49
+rect 322 16 329 42
+rect 349 16 352 42
+rect 537 42 571 49
+rect 322 7 352 16
+rect 407 25 457 31
+rect 407 -5 416 25
+rect 450 -5 457 25
+rect 537 13 544 42
+rect 566 13 571 42
+rect 537 9 571 13
+rect -90 -27 -46 -7
+rect -29 -27 -23 -7
+rect 407 -14 457 -5
+<< via1 >>
+rect -289 22 -261 53
+rect -6 17 10 43
+rect 10 17 14 43
+rect 161 21 184 41
+rect 329 16 345 42
+rect 345 16 349 42
+rect 416 -5 450 25
+rect 544 41 566 42
+rect 544 13 565 41
+rect 565 13 566 41
+<< metal2 >>
+rect -300 53 -249 125
+rect -300 22 -289 53
+rect -261 22 -249 53
+rect -300 -53 -249 22
+rect -14 43 51 51
+rect -14 17 -6 43
+rect 46 17 51 43
+rect -14 9 51 17
+rect 148 41 199 125
+rect 148 21 161 41
+rect 184 21 199 41
+rect 148 -53 199 21
+rect 293 42 352 49
+rect 293 16 294 42
+rect 349 16 352 42
+rect 523 42 575 125
+rect 293 7 352 16
+rect 407 25 457 31
+rect 407 -5 416 25
+rect 450 -5 457 25
+rect 407 -14 457 -5
+rect 523 13 544 42
+rect 566 13 575 42
+rect 523 -53 575 13
+<< rmetal2 >>
+rect 294 16 329 42
+<< via2 >>
+rect -6 17 14 43
+rect 14 17 46 43
+rect 416 -5 450 25
+<< metal3 >>
+rect -372 43 352 45
+rect -372 17 -6 43
+rect 46 17 352 43
+rect -372 13 352 17
+rect 407 25 586 31
+rect 407 -5 416 25
+rect 450 -5 586 25
+rect 407 -14 586 -5
+<< labels >>
+flabel metal2 -300 116 -249 125 1 FreeSans 40 0 0 0 VINJ
+port 1 n
+flabel metal2 148 118 199 125 1 FreeSans 40 0 0 0 OUTPUT
+port 2 n
+flabel metal2 523 114 575 125 1 FreeSans 40 0 0 0 GND
+port 3 n
+flabel metal3 -372 13 -363 45 1 FreeSans 40 0 0 0 INPUT
+port 4 n
+flabel metal3 575 -14 586 31 1 FreeSans 40 0 0 0 SELECT
+port 5 n
+<< end >>
