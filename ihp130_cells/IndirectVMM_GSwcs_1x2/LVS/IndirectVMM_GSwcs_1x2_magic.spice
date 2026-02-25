@@ -1,0 +1,42 @@
+* NGSPICE file created from IndirectVMM_GSwcs_1x2.ext - technology: ihp-sg13g2
+
+.subckt IndirectVMM_GSwcs_1x2 Vsel[0] Vs[0] VINJ GND Vgrun[0] VTUN Vgrun[1] Vs[1]
++ Vsel[1] Vgsel RUN PROG Vsel_B[0] Vg[0] Vg[1] Vsel_B[1]
+M0 a_n450_1488# RUN Vg[0] VINJ sg13_hv_pmos ad=1.1694p pd=5.82u as=1.10047p ps=4.62u w=2u l=0.5u
+**devattr s=21200,506 d=15200,476
+M1 VINJ Vsel[0] a_n450_1488# VINJ sg13_hv_pmos ad=1.56165p pd=8.99u as=1.1694p ps=5.82u w=2u l=0.5u
+**devattr s=32000,960 d=27200,936
+M2 a_1292_1598# RUN Vg[1] VINJ sg13_hv_pmos ad=1.1694p pd=5.82u as=1.10047p ps=4.62u w=2u l=0.5u
+**devattr s=21200,506 d=15200,476
+M3 Vg[1] RUN Vgrun[1] GND sg13_hv_nmos ad=0.55023p pd=2.31u as=0.96567p ps=4.54u w=1u l=0.5u
+**devattr s=17200,572 d=10000,300
+M4 VINJ Vsel[1] a_1292_1598# VINJ sg13_hv_pmos ad=1.56165p pd=8.99u as=1.1694p ps=5.82u w=2u l=0.5u
+**devattr s=32000,960 d=27200,936
+M5 Vg[0] RUN Vgrun[0] GND sg13_hv_nmos ad=0.55023p pd=2.31u as=0.96567p ps=4.54u w=1u l=0.5u
+**devattr s=17200,572 d=10000,300
+M6 GND Vsel[1] Vsel_B[1] GND sg13_hv_nmos ad=1.937p pd=11.1u as=0.69853p ps=4.29333u w=1u l=0.5u
+**devattr s=20000,600 d=20000,600
+M7 Vsel_B[0] Vsel[0] GND GND sg13_hv_nmos ad=0.69853p pd=4.29333u as=1.937p ps=11.1u w=1u l=0.5u
+**devattr s=20000,600 d=20000,600
+M8 VINJ Vsel[1] Vsel_B[1] VINJ sg13_hv_pmos ad=1.56165p pd=8.99u as=1.39707p ps=8.58667u w=2u l=0.5u
+**devattr s=27200,936 d=27200,936
+M9 Vg[0] PROG Vgrun[0] VINJ sg13_hv_pmos ad=1.10047p pd=4.62u as=1.93133p ps=9.08u w=2u l=0.5u
+**devattr s=28000,940 d=21200,506
+M10 VINJ Vsel[0] Vsel_B[0] VINJ sg13_hv_pmos ad=1.56165p pd=8.99u as=1.39707p ps=8.58667u w=2u l=0.5u
+**devattr s=27200,936 d=27200,936
+M11 Vgsel Vsel_B[0] a_n450_1488# VINJ sg13_hv_pmos ad=1.27467p pd=6.27333u as=1.1694p ps=5.82u w=2u l=0.5u
+**devattr s=15200,476 d=32000,960
+M12 a_1292_1598# PROG Vg[1] GND sg13_hv_nmos ad=0.5847p pd=2.91u as=0.55023p ps=2.31u w=1u l=0.5u
+**devattr s=10000,300 d=20000,600
+M13 a_n450_1488# PROG Vg[0] GND sg13_hv_nmos ad=0.5847p pd=2.91u as=0.55023p ps=2.31u w=1u l=0.5u
+**devattr s=10000,300 d=20000,600
+M14 Vg[1] PROG Vgrun[1] VINJ sg13_hv_pmos ad=1.10047p pd=4.62u as=1.93133p ps=9.08u w=2u l=0.5u
+**devattr s=28000,940 d=21200,506
+M15 Vgsel Vsel[1] a_1292_1598# GND sg13_hv_nmos ad=0.63733p pd=3.13667u as=0.5847p ps=2.91u w=1u l=0.5u
+**devattr s=20000,600 d=20000,600
+M16 a_n450_1488# Vsel[0] Vgsel GND sg13_hv_nmos ad=0.5847p pd=2.91u as=0.63733p ps=3.13667u w=1u l=0.5u
+**devattr s=20000,600 d=20000,600
+M17 Vgsel Vsel_B[1] a_1292_1598# VINJ sg13_hv_pmos ad=1.27467p pd=6.27333u as=1.1694p ps=5.82u w=2u l=0.5u
+**devattr s=15200,476 d=32000,960
+.ends
+

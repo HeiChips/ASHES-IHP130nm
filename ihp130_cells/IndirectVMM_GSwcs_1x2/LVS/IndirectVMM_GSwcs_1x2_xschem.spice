@@ -1,0 +1,26 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/IndirectVMM_GSwcs_1x2/IndirectVMM_GSwcs_1x2.sch
+.subckt IndirectVMM_GSwcs_1x2 VINJ GND Vgrun[0] Vgrun[1] Vg[0] Vg[1] Vsel[0] Vsel[1] Vsel_B[0] Vsel_B[1] Vgsel Vsel[0] Vsel[1] RUN
++ PROG VINJ VINJ GND Vsel[0] Vsel[1] VINJ GND RUN PROG VINJ GND Vs[0] Vs[1] VTUN
+*.PININFO VINJ:B GND:B Vgrun[0:1]:I Vg[0:1]:O Vsel[0:1]:B Vsel_B[0:1]:B Vgsel:B Vsel[0:1]:B RUN:B PROG:B VINJ:B VINJ:B GND:B
+*+ Vsel[0:1]:B VINJ:B GND:B RUN:B PROG:B VINJ:B GND:B Vs[0:1]:B VTUN:B
+* noconn Vs[0:1]
+* noconn VTUN
+M2[0] Vsel_B[0] Vsel[0] VINJ VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M2[1] Vsel_B[1] Vsel[1] VINJ VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M1[0] Vgsel Vsel_B[0] net1_1 VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M1[1] Vgsel Vsel_B[1] net1_0 VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M5[0] net1_1 Vsel[0] VINJ VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M5[1] net1_0 Vsel[1] VINJ VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M3[0] net1_1 RUN Vg[0] VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M3[1] net1_0 RUN Vg[1] VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M4[0] Vg[0] PROG Vgrun[0] VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M4[1] Vg[1] PROG Vgrun[1] VINJ sg13_hv_pmos w=2u l=.5u ng=1 m=1
+M6[0] Vsel_B[0] Vsel[0] GND GND sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M6[1] Vsel_B[1] Vsel[1] GND GND sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M7[0] Vgsel Vsel[0] net1_1 GND sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M7[1] Vgsel Vsel[1] net1_0 GND sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M8[0] net1_1 PROG Vg[0] GND sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M8[1] net1_0 PROG Vg[1] GND sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M9[0] Vg[0] RUN Vgrun[0] GND sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+M9[1] Vg[1] RUN Vgrun[1] GND sg13_hv_nmos w=1u l=0.5u ng=1 m=1
+.ends

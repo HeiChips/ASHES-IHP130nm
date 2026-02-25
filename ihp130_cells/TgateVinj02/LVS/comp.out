@@ -1,0 +1,27 @@
+
+Subcircuit summary:
+Circuit 1: ihp130_TgateVinj02              |Circuit 2: ihp130_TgateVinj02              
+-------------------------------------------|-------------------------------------------
+sg13_hv_nmos (2)                           |sg13_hv_nmos (2)                           
+sg13_hv_pmos (2)                           |sg13_hv_pmos (2)                           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ihp130_TgateVinj02              |Circuit 2: ihp130_TgateVinj02              
+-------------------------------------------|-------------------------------------------
+OUTPUT                                     |OUTPUT                                     
+INPUT                                      |INPUT                                      
+SELECT                                     |SELECT                                     
+VINJ                                       |VINJ                                       
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ihp130_TgateVinj02 and ihp130_TgateVinj02 are equivalent.
+
+Final result: Circuits match uniquely.
+.

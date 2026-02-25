@@ -1,0 +1,184 @@
+timestamp 1771995093
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+parameters sg13_hv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_hv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+port "Vs[1]" 8 2866 2220 2946 2270 m2
+port "VTUN" 6 1312 2220 1392 2270 m2
+port "VTUN" 6 930 2220 1010 2270 m2
+port "Vs[0]" 2 -624 2220 -544 2270 m2
+port "Vgrun[1]" 7 1740 2220 1820 2270 m2
+port "Vgrun[0]" 5 502 2220 582 2270 m2
+port "Vg[1]" 15 2000 970 2080 1020 m2
+port "Vg[0]" 14 242 970 322 1020 m2
+port "RUN" 11 -892 1310 -868 1364 m3
+port "PROG" 12 -892 1206 -868 1260 m3
+port "Vsel_B[1]" 16 2992 970 3072 1020 m2
+port "Vsel[1]" 9 2992 2220 3072 2270 m2
+port "Vgsel" 10 -892 1416 -868 1468 m3
+port "Vsel_B[0]" 13 -750 970 -670 1020 m2
+port "Vsel[0]" 1 -750 2220 -670 2270 m2
+port "VINJ" 3 2744 2220 2824 2270 m2
+port "VINJ" 3 -502 2220 -422 2270 m2
+port "GND" 4 2266 2220 2346 2270 m2
+port "GND" 4 -24 2220 56 2270 m2
+node "Vs[1]" 3 245.412 2866 2220 m2 0 0 0 0 0 0 56000 2840 0 0 0 0 0 0 0 0 0 0
+node "VTUN" 3 51.5968 1312 2220 m2 0 0 0 0 0 0 63200 2828 0 0 0 0 0 0 0 0 0 0
+node "VTUN" 3 51.5968 930 2220 m2 0 0 0 0 0 0 63200 2828 0 0 0 0 0 0 0 0 0 0
+node "Vs[0]" 3 245.412 -624 2220 m2 0 0 0 0 0 0 56000 2840 0 0 0 0 0 0 0 0 0 0
+node "Vgrun[1]" 4 352.359 1740 2220 m2 0 0 0 0 115880 2724 57156 2512 0 0 0 0 0 0 0 0 0 0
+node "Vgrun[0]" 4 352.359 502 2220 m2 0 0 0 0 115880 2724 57156 2512 0 0 0 0 0 0 0 0 0 0
+node "Vg[1]" 2 214.488 2000 970 m2 0 0 0 0 132056 2772 28492 1184 0 0 0 0 0 0 0 0 0 0
+node "Vg[0]" 2 214.488 242 970 m2 0 0 0 0 132056 2772 28492 1184 0 0 0 0 0 0 0 0 0 0
+node "RUN" 7 1052.6 -892 1310 m3 0 0 0 0 6384 320 16632 564 221724 8320 0 0 0 0 0 0 0 0
+node "PROG" 9 1784.6 -892 1206 m3 0 0 0 0 25232 1080 18072 932 223204 8360 0 0 0 0 0 0 0 0
+node "Vsel_B[1]" 5 1106.59 2992 970 m2 0 0 0 0 83824 2576 88080 3160 38776 1412 0 0 0 0 0 0 0 0
+node "a_1292_1598#" 4 173.191 1292 1598 hvpdif 0 0 0 0 187104 4656 22680 948 0 0 0 0 0 0 0 0 0 0
+node "Vsel[1]" 1 1486.21 2992 2220 m2 0 0 0 0 7800 356 17480 820 0 0 0 0 0 0 0 0 0 0
+node "Vgsel" 11 975.122 -892 1416 m3 0 0 0 0 152960 3764 82920 2752 245500 9024 0 0 0 0 0 0 0 0
+node "a_n450_1488#" 4 173.191 -450 1488 hvndif 0 0 0 0 187104 4656 22680 948 0 0 0 0 0 0 0 0 0 0
+node "Vsel_B[0]" 5 1106.59 -750 970 m2 0 0 0 0 83824 2576 88080 3160 38776 1412 0 0 0 0 0 0 0 0
+node "Vsel[0]" 1 1486.21 -750 2220 m2 0 0 0 0 7800 356 17480 820 0 0 0 0 0 0 0 0 0 0
+node "VINJ" 12 1533.55 -502 2220 m2 0 0 0 0 249864 7192 114400 5760 0 0 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 -24 2220 m2 0 0 0 0 154960 4440 135752 5856 0 0 0 0 0 0 0 0 0 0
+cap "Vgrun[0]" "PROG" 170.327
+cap "VINJ" "Vs[0]" 1034.87
+cap "VTUN" "VTUN" 76.5508
+cap "Vgrun[0]" "Vsel_B[1]" 0.0956618
+cap "Vs[0]" "Vsel_B[0]" 128.417
+cap "RUN" "Vgsel" 3679.26
+cap "a_n450_1488#" "PROG" 76.7987
+cap "VTUN" "Vgrun[1]" 132.008
+cap "a_n450_1488#" "Vsel_B[1]" 0.244489
+cap "Vsel[0]" "Vgsel" 55.4207
+cap "VTUN" "Vsel[1]" 15.3707
+cap "Vg[1]" "RUN" 300.875
+cap "PROG" "Vsel_B[1]" 656.888
+cap "Vs[1]" "RUN" 17.6951
+cap "VTUN" "VINJ" 85.1742
+cap "VTUN" "Vsel_B[0]" 0.0877638
+cap "VTUN" "RUN" 99.1464
+cap "Vgrun[0]" "Vgsel" 255.313
+cap "VTUN" "Vsel[0]" 15.3707
+cap "Vgrun[1]" "RUN" 124.006
+cap "a_n450_1488#" "Vgsel" 729.183
+cap "RUN" "Vsel[1]" 0.508564
+cap "Vsel[0]" "Vsel[1]" 6.30215
+cap "PROG" "Vgsel" 41.1176
+cap "VINJ" "RUN" 1172.39
+cap "RUN" "Vsel_B[0]" 89.7215
+cap "Vsel_B[1]" "Vgsel" 123.988
+cap "VINJ" "Vsel[0]" 662.696
+cap "VTUN" "Vgrun[0]" 132.008
+cap "Vsel[0]" "Vsel_B[0]" 123.33
+cap "Vg[0]" "Vs[0]" 0.386629
+cap "Vg[1]" "PROG" 134.284
+cap "Vs[1]" "PROG" 18.9864
+cap "Vg[1]" "Vsel_B[1]" 32.289
+cap "Vgrun[1]" "Vgrun[0]" 4.56111
+cap "Vs[1]" "Vsel_B[1]" 128.417
+cap "VTUN" "a_n450_1488#" 543.254
+cap "VTUN" "PROG" 72.4824
+cap "Vgrun[0]" "VINJ" 210.576
+cap "VTUN" "Vsel_B[1]" 0.0877638
+cap "Vgrun[0]" "Vsel_B[0]" 159.419
+cap "Vgrun[1]" "PROG" 171.372
+cap "a_n450_1488#" "VINJ" 336.243
+cap "Vgrun[1]" "Vsel_B[1]" 159.419
+cap "PROG" "Vsel[1]" 9.3695
+cap "a_n450_1488#" "Vsel_B[0]" 326.913
+cap "Vsel_B[1]" "Vsel[1]" 123.33
+cap "VINJ" "PROG" 541.697
+cap "PROG" "Vsel_B[0]" 656.888
+cap "Vg[1]" "Vgsel" 86.0477
+cap "VINJ" "Vsel_B[1]" 1208.52
+cap "VTUN" "a_1292_1598#" 543.254
+cap "Vsel_B[1]" "Vsel_B[0]" 9.23956
+cap "Vs[1]" "Vgsel" 160.565
+cap "Vg[1]" "Vs[1]" 0.386629
+cap "VTUN" "Vgsel" 141.796
+cap "Vg[0]" "RUN" 300.49
+cap "Vg[0]" "Vsel[0]" 0.589499
+cap "Vgrun[1]" "Vgsel" 255.313
+cap "Vgsel" "Vsel[1]" 55.4207
+cap "VINJ" "Vgsel" 283.872
+cap "a_1292_1598#" "RUN" 147.031
+cap "Vg[1]" "Vgrun[1]" 491.481
+cap "Vgsel" "Vsel_B[0]" 123.988
+cap "Vgrun[1]" "Vs[1]" 0.24087
+cap "Vg[1]" "Vsel[1]" 0.589499
+cap "Vg[0]" "Vgrun[0]" 491.481
+cap "Vs[1]" "Vsel[1]" 179.341
+cap "Vg[1]" "VINJ" 95.2178
+cap "Vs[1]" "VINJ" 1034.87
+cap "VTUN" "Vgrun[1]" 0.562469
+cap "Vg[0]" "a_n450_1488#" 511.105
+cap "VTUN" "Vsel[1]" 1.42355
+cap "Vg[0]" "PROG" 134.279
+cap "VTUN" "VINJ" 85.2442
+cap "VTUN" "Vsel_B[0]" 11.0376
+cap "RUN" "Vs[0]" 17.6951
+cap "Vgrun[1]" "Vsel[1]" 20.9534
+cap "Vsel[0]" "Vs[0]" 179.341
+cap "a_1292_1598#" "a_n450_1488#" 164.357
+cap "Vgrun[1]" "VINJ" 210.486
+cap "Vgrun[1]" "Vsel_B[0]" 0.0956618
+cap "VINJ" "Vsel[1]" 662.696
+cap "a_1292_1598#" "PROG" 76.7987
+cap "VINJ" "Vsel_B[0]" 1208.52
+cap "a_1292_1598#" "Vsel_B[1]" 326.913
+cap "VTUN" "RUN" 100.216
+cap "VTUN" "Vsel[0]" 1.42355
+cap "Vgrun[0]" "Vs[0]" 0.24087
+cap "Vg[0]" "Vgsel" 86.0557
+cap "a_n450_1488#" "Vs[0]" 0.559836
+cap "Vg[1]" "Vg[0]" 5.24528
+cap "PROG" "Vs[0]" 18.9864
+cap "VTUN" "Vgrun[0]" 0.562469
+cap "a_1292_1598#" "Vgsel" 729.183
+cap "VTUN" "Vg[0]" 45.1172
+cap "Vsel[0]" "RUN" 1.06972
+cap "VTUN" "a_n450_1488#" 0.0142997
+cap "Vg[1]" "a_1292_1598#" 511.105
+cap "a_1292_1598#" "Vs[1]" 0.559836
+cap "VTUN" "PROG" 72.8457
+cap "VTUN" "Vsel_B[1]" 11.0376
+cap "VTUN" "a_1292_1598#" 0.0142997
+cap "Vg[0]" "VINJ" 95.266
+cap "Vg[0]" "Vsel_B[0]" 32.289
+cap "Vgrun[0]" "RUN" 124.006
+cap "Vs[0]" "Vgsel" 160.565
+cap "Vgrun[0]" "Vsel[0]" 20.9534
+cap "a_1292_1598#" "Vgrun[1]" 45.5494
+cap "a_n450_1488#" "RUN" 147.574
+cap "a_1292_1598#" "Vsel[1]" 74.5794
+cap "a_n450_1488#" "Vsel[0]" 74.5794
+cap "a_1292_1598#" "VINJ" 336.243
+cap "a_1292_1598#" "Vsel_B[0]" 0.244489
+cap "RUN" "PROG" 4091.2
+cap "RUN" "Vsel_B[1]" 92.6521
+cap "Vsel[0]" "PROG" 9.3695
+cap "VTUN" "Vgsel" 141.747
+cap "VTUN" "Vg[1]" 45.1172
+cap "Vgrun[0]" "a_n450_1488#" 45.5494
+device msubckt sg13_hv_nmos 2302 1222 2303 1223 l=100 w=200 "GND" "RUN" 200 0 "Vgrun[1]" 200 17200,572 "Vg[1]" 200 10000,300
+device msubckt sg13_hv_nmos 2772 1488 2773 1489 l=100 w=200 "GND" "Vsel[1]" 200 0 "a_1292_1598#" 200 20000,600 "Vgsel" 200 20000,600
+device msubckt sg13_hv_nmos 2302 1422 2303 1423 l=100 w=200 "GND" "PROG" 200 0 "Vg[1]" 200 10000,300 "a_1292_1598#" 200 20000,600
+device msubckt sg13_hv_pmos 1292 1292 1293 1293 l=100 w=400 "VINJ" "PROG" 200 0 "Vgrun[1]" 400 28000,940 "Vg[1]" 400 21200,506
+device msubckt sg13_hv_pmos 630 1292 631 1293 l=100 w=400 "VINJ" "PROG" 200 0 "Vgrun[0]" 400 28000,940 "Vg[0]" 400 21200,506
+device msubckt sg13_hv_nmos -180 1222 -179 1223 l=100 w=200 "GND" "RUN" 200 0 "Vgrun[0]" 200 17200,572 "Vg[0]" 200 10000,300
+device msubckt sg13_hv_pmos 1292 1498 1293 1499 l=100 w=400 "VINJ" "RUN" 200 0 "Vg[1]" 400 21200,506 "a_1292_1598#" 400 15200,476
+device msubckt sg13_hv_pmos 630 1498 631 1499 l=100 w=400 "VINJ" "RUN" 200 0 "Vg[0]" 400 21200,506 "a_n450_1488#" 400 15200,476
+device msubckt sg13_hv_nmos -180 1422 -179 1423 l=100 w=200 "GND" "PROG" 200 0 "Vg[0]" 200 10000,300 "a_n450_1488#" 200 20000,600
+device msubckt sg13_hv_nmos 2772 1740 2773 1741 l=100 w=200 "GND" "Vsel[1]" 200 0 "Vsel_B[1]" 200 20000,600 "GND" 200 20000,600
+device msubckt sg13_hv_pmos 1292 1674 1293 1675 l=100 w=400 "VINJ" "Vsel_B[1]" 200 0 "a_1292_1598#" 400 15200,476 "Vgsel" 400 32000,960
+device msubckt sg13_hv_pmos 1872 1978 1873 1979 l=100 w=400 "VINJ" "Vsel[1]" 200 0 "Vsel_B[1]" 400 27200,936 "VINJ" 400 27200,936
+device msubckt sg13_hv_pmos 1292 1978 1293 1979 l=100 w=400 "VINJ" "Vsel[1]" 200 0 "a_1292_1598#" 400 32000,960 "VINJ" 400 27200,936
+device msubckt sg13_hv_pmos 630 1674 631 1675 l=100 w=400 "VINJ" "Vsel_B[0]" 200 0 "a_n450_1488#" 400 15200,476 "Vgsel" 400 32000,960
+device msubckt sg13_hv_nmos -550 1488 -549 1489 l=100 w=200 "GND" "Vsel[0]" 200 0 "Vgsel" 200 20000,600 "a_n450_1488#" 200 20000,600
+device msubckt sg13_hv_nmos -550 1740 -549 1741 l=100 w=200 "GND" "Vsel[0]" 200 0 "GND" 200 20000,600 "Vsel_B[0]" 200 20000,600
+device msubckt sg13_hv_pmos 630 1978 631 1979 l=100 w=400 "VINJ" "Vsel[0]" 200 0 "a_n450_1488#" 400 32000,960 "VINJ" 400 27200,936
+device msubckt sg13_hv_pmos 50 1978 51 1979 l=100 w=400 "VINJ" "Vsel[0]" 200 0 "Vsel_B[0]" 400 27200,936 "VINJ" 400 27200,936

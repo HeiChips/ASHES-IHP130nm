@@ -1,0 +1,8 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/TgateVinj02/ihp130_TgateVinj02.sch
+.subckt ihp130_TgateVinj02 SELECT INPUT VINJ GND OUTPUT
+*.PININFO SELECT:I INPUT:I VINJ:I GND:I OUTPUT:O
+M1 Selb SELECT VINJ VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M2 Selb SELECT GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+M3 INPUT Selb OUTPUT VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M4 INPUT SELECT OUTPUT GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+.ends

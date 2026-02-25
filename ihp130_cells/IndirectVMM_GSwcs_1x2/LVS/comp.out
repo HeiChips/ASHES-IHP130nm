@@ -1,0 +1,44 @@
+
+Cell IndirectVMM_GSwcs_1x2 (0) disconnected node: Vs[0]
+Cell IndirectVMM_GSwcs_1x2 (0) disconnected node: VTUN
+Cell IndirectVMM_GSwcs_1x2 (0) disconnected node: Vs[1]
+Cell IndirectVMM_GSwcs_1x2 (1) disconnected node: Vs[0]
+Cell IndirectVMM_GSwcs_1x2 (1) disconnected node: Vs[1]
+Cell IndirectVMM_GSwcs_1x2 (1) disconnected node: VTUN
+Subcircuit summary:
+Circuit 1: IndirectVMM_GSwcs_1x2           |Circuit 2: IndirectVMM_GSwcs_1x2           
+-------------------------------------------|-------------------------------------------
+sg13_hv_pmos (10)                          |sg13_hv_pmos (10)                          
+sg13_hv_nmos (8)                           |sg13_hv_nmos (8)                           
+Number of devices: 18                      |Number of devices: 18                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: IndirectVMM_GSwcs_1x2           |Circuit 2: IndirectVMM_GSwcs_1x2           
+-------------------------------------------|-------------------------------------------
+Vsel_B[0]                                  |Vsel_B[0]                                  
+Vsel_B[1]                                  |Vsel_B[1]                                  
+GND                                        |GND                                        
+Vgrun[0]                                   |Vgrun[0]                                   
+Vgrun[1]                                   |Vgrun[1]                                   
+VINJ                                       |VINJ                                       
+Vsel[0]                                    |Vsel[0]                                    
+Vsel[1]                                    |Vsel[1]                                    
+Vgsel                                      |Vgsel                                      
+RUN                                        |RUN                                        
+Vg[0]                                      |Vg[0]                                      
+Vg[1]                                      |Vg[1]                                      
+PROG                                       |PROG                                       
+Vs[0]                                      |Vs[0]                                      
+VTUN                                       |VTUN                                       
+Vs[1]                                      |Vs[1]                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes IndirectVMM_GSwcs_1x2 and IndirectVMM_GSwcs_1x2 are equivalent.
+
+Final result: Circuits match uniquely.
+.

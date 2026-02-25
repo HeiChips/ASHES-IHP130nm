@@ -1,0 +1,33 @@
+timestamp 1771971037
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+parameters sg13_hv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_hv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+port "OUTPUT" 2 296 236 398 250 m2
+port "INPUT" 4 -744 26 -726 90 m3
+port "SELECT" 5 1150 -28 1172 62 m3
+port "VINJ" 1 -600 232 -498 250 m2
+port "GND" 3 1046 228 1150 250 m2
+node "OUTPUT" 1 144.929 296 236 m2 0 0 0 0 22568 972 36312 916 0 0 0 0 0 0 0 0 0 0
+node "INPUT" 3 533.847 -744 26 m3 0 0 0 0 10416 584 19320 796 92416 3016 0 0 0 0 0 0 0 0
+node "a_n194_38#" 3 400.174 -194 38 hvpdif 0 0 0 0 66112 2696 0 0 0 0 0 0 0 0 0 0 0 0
+node "SELECT" 1 1083.92 1150 -28 m3 0 0 0 0 9000 380 9000 380 32220 896 0 0 0 0 0 0 0 0
+node "VINJ" 1 164.334 -600 232 m2 0 0 0 0 26568 792 36312 916 0 0 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 1046 228 m2 0 0 0 0 23920 768 37024 920 0 0 0 0 0 0 0 0 0 0
+cap "a_n194_38#" "SELECT" 171.966
+cap "VINJ" "INPUT" 108.347
+cap "OUTPUT" "a_n194_38#" 345.061
+cap "INPUT" "a_n194_38#" 219.989
+cap "OUTPUT" "SELECT" 37.6105
+cap "VINJ" "a_n194_38#" 261.611
+cap "INPUT" "SELECT" 92.8335
+cap "OUTPUT" "INPUT" 156.278
+cap "VINJ" "SELECT" 267.346
+cap "VINJ" "OUTPUT" 58.7935
+device msubckt sg13_hv_nmos 536 14 537 15 l=100 w=84 "GND" "SELECT" 200 0 "OUTPUT" 84 5712,304 "INPUT" 84 5712,304
+device msubckt sg13_hv_nmos 814 98 815 99 l=100 w=84 "GND" "SELECT" 200 0 "a_n194_38#" 84 5712,304 "GND" 84 5712,304
+device msubckt sg13_hv_pmos 46 18 47 19 l=100 w=84 "VINJ" "a_n194_38#" 200 0 "INPUT" 84 6216,316 "OUTPUT" 84 6216,316
+device msubckt sg13_hv_pmos -294 38 -293 39 l=100 w=84 "VINJ" "SELECT" 200 0 "VINJ" 84 6216,316 "a_n194_38#" 84 6216,316

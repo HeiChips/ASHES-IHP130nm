@@ -1,0 +1,13 @@
+* NGSPICE file created from ihp130_TgateVinj02.ext - technology: ihp-sg13g2
+
+.subckt ihp130_TgateVinj02 VINJ OUTPUT GND INPUT SELECT
+M0 GND SELECT a_n194_38# GND sg13_hv_nmos ad=0.598p pd=3.84u as=0.8264p ps=6.74u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M1 INPUT SELECT OUTPUT GND sg13_hv_nmos ad=0.1302p pd=1.46u as=0.2821p ps=2.43u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M2 OUTPUT a_n194_38# INPUT VINJ sg13_hv_pmos ad=0.2821p pd=2.43u as=0.1302p ps=1.46u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M3 a_n194_38# SELECT VINJ VINJ sg13_hv_pmos ad=0.8264p pd=6.74u as=0.6642p ps=3.96u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+.ends
+
