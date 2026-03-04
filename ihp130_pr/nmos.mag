@@ -1,0 +1,37 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1772143227
+<< error_p >>
+rect 14 4 46 56
+rect 74 -21 100 81
+rect 128 4 160 56
+<< pwell >>
+rect -26 -26 200 86
+<< nmos >>
+rect 74 15 100 45
+<< ndiff >>
+rect 0 46 60 60
+rect 0 14 14 46
+rect 46 45 60 46
+rect 114 46 174 60
+rect 114 45 128 46
+rect 46 15 74 45
+rect 100 15 128 45
+rect 46 14 60 15
+rect 0 0 60 14
+rect 114 14 128 15
+rect 160 14 174 46
+rect 114 0 174 14
+<< ndiffc >>
+rect 14 14 46 46
+rect 128 14 160 46
+<< poly >>
+rect 74 45 100 81
+rect 74 -21 100 15
+<< metal1 >>
+rect 14 46 46 56
+rect 14 4 46 14
+rect 128 46 160 56
+rect 128 4 160 14
+<< end >>

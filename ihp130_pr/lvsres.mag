@@ -1,0 +1,9 @@
+magic
+tech ihp-sg13g2
+timestamp 1772143227
+<< metal1 >>
+rect -70 0 -50 500
+rect 50 0 70 500
+<< rmetal1 >>
+rect -50 0 50 500
+<< end >>

@@ -1,0 +1,95 @@
+* NGSPICE file created from ShiftRegister.ext - technology: ihp-sg13g2
+
+.subckt sg13g2_buf_1 A X VDD VSS
+M0 X a_40_152# VSS VSS sg13_lv_nmos ad=0.27901p pd=2.41097u as=0.60651p ps=3.68279u w=0.74u l=0.13u
+**devattr s=5950,232 d=11544,452
+M1 X a_40_152# VDD VDD sg13_lv_pmos ad=0.42229p pd=3.64903u as=0.58229p ps=3.46286u w=1.12u l=0.13u
+**devattr s=8456,308 d=16800,598
+M2 VDD A a_40_152# VDD sg13_lv_pmos ad=0.43671p pd=2.59714u as=0.45573p ps=4.65324u w=0.84u l=0.13u
+**devattr s=11424,472 d=8456,308
+M3 VSS A a_40_152# VSS sg13_lv_nmos ad=0.45079p pd=2.73721u as=0.29839p ps=3.04676u w=0.55u l=0.13u
+**devattr s=7480,356 d=5950,232
+.ends
+
+.subckt sg13g2_dfrbp_1 D Q CLK VSS RESET_B Q_N VDD
+M0 a_550_127# RESET_B VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.63749p ps=3.24323u w=0.42u l=0.13u
+**devattr s=6804,330 d=1512,120
+M1 a_298_337# a_741_93# a_681_505# VDD sg13_lv_pmos ad=0.17858p pd=1.944u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=2520,144 d=3192,160
+M2 a_1840_334# a_1583_191# a_2002_114# VSS sg13_lv_nmos ad=0.2569p pd=2.97u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=1512,120 d=5712,304
+M3 a_38_114# a_843_236# a_298_337# VDD sg13_lv_pmos ad=0.39145p pd=4.598u as=0.17858p ps=1.944u w=0.42u l=0.13u
+**devattr s=3192,160 d=5712,304
+M4 a_741_93# CLK a_1201_135# VSS sg13_lv_nmos ad=0.31649p pd=3.23054u as=0 ps=0 w=0.74u l=0.13u
+**devattr s=12693,361 d=10064,432
+M5 a_38_114# D VDD VDD sg13_lv_pmos ad=0.39145p pd=4.598u as=0.47248p ps=2.46279u w=0.42u l=0.13u
+**devattr s=5712,304 d=3192,160
+M6 a_741_93# CLK a_1201_410# VDD sg13_lv_pmos ad=0.47901p pd=4.88946u as=0 ps=0 w=1.12u l=0.13u
+**devattr s=16466,424 d=16352,594
+M7 Q_N a_1583_191# VSS VSS sg13_lv_nmos ad=0.29168p pd=2.34731u as=1.12321p ps=5.71427u w=0.74u l=0.13u
+**devattr s=10064,432 d=11396,450
+M8 a_1201_135# a_741_93# a_843_236# VSS sg13_lv_nmos ad=0 pd=0 as=0.59926p ps=5.66935u w=0.74u l=0.13u
+**devattr s=10064,432 d=12693,361
+M9 VSS a_1840_334# a_1489_191# VSS sg13_lv_nmos ad=0.63749p pd=3.24323u as=0.20904p ps=2.52u w=0.42u l=0.13u
+**devattr s=5712,304 d=3192,160
+M10 VDD RESET_B a_38_114# VDD sg13_lv_pmos ad=0.47248p pd=2.46279u as=0.39145p ps=4.598u w=0.42u l=0.13u
+**devattr s=3192,160 d=14495,521
+M11 a_324_432# a_298_337# VSS VSS sg13_lv_nmos ad=0.51563p pd=6.06885u as=1.12321p ps=5.71427u w=0.74u l=0.13u
+**devattr s=6504,283 d=10064,432
+M12 a_1201_410# a_741_93# a_843_236# VDD sg13_lv_pmos ad=0 pd=0 as=0.90699p ps=8.58064u w=1.12u l=0.13u
+**devattr s=15456,586 d=16466,424
+M13 VDD a_1583_191# a_2420_412# VDD sg13_lv_pmos ad=1.25995p pd=6.56743u as=0.52148p ps=4.43785u w=1.12u l=0.13u
+**devattr s=15456,586 d=8512,300
+M14 Q a_2420_412# VDD VDD sg13_lv_pmos ad=0.53649p pd=3.85979u as=1.25995p ps=6.56743u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+M15 a_2002_114# RESET_B VSS VSS sg13_lv_nmos ad=0 pd=0 as=0.63749p ps=3.24323u w=0.42u l=0.13u
+**devattr s=3192,160 d=1512,120
+M16 a_132_114# D a_38_114# VSS sg13_lv_nmos ad=0 pd=0 as=0.39145p ps=4.598u w=0.42u l=0.13u
+**devattr s=5712,304 d=2436,142
+M17 a_1785_429# a_843_236# a_1583_191# VDD sg13_lv_pmos ad=0 pd=0 as=0.11717p ps=1.39349u w=0.42u l=0.13u
+**devattr s=8192,326 d=3738,173
+M18 VDD a_1583_191# a_1840_334# VDD sg13_lv_pmos ad=0.47248p pd=2.46279u as=0.2569p ps=2.97u w=0.42u l=0.13u
+**devattr s=3192,160 d=10556,362
+M19 Q_N a_1583_191# VDD VDD sg13_lv_pmos ad=0.44147p pd=3.55269u as=1.25995p ps=6.56743u w=1.12u l=0.13u
+**devattr s=10556,362 d=17248,602
+M20 a_1583_191# a_741_93# a_324_432# VDD sg13_lv_pmos ad=0.27898p pd=3.31783u as=0.6968p ps=8.20115u w=1u l=0.13u
+**devattr s=13600,536 d=8192,326
+M21 a_1583_191# a_741_93# a_1489_191# VSS sg13_lv_nmos ad=0.11717p pd=1.39349u as=0.20904p ps=2.52u w=0.42u l=0.13u
+**devattr s=5712,304 d=5066,229
+M22 a_1900_429# a_1840_334# a_1785_429# VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.42u l=0.13u
+**devattr s=3738,173 d=8160,367
+M23 a_1840_334# RESET_B a_1900_429# VDD sg13_lv_pmos ad=0.2569p pd=2.97u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=8160,367 d=3192,160
+M24 a_324_432# a_843_236# a_1583_191# VSS sg13_lv_nmos ad=0.51563p pd=6.06885u as=0.20645p ps=2.45519u w=0.74u l=0.13u
+**devattr s=5066,229 d=13892,542
+M25 VSS a_1583_191# a_2420_412# VSS sg13_lv_nmos ad=1.12321p pd=5.71427u as=0.34455p ps=2.93215u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+M26 a_298_337# a_741_93# a_38_114# VSS sg13_lv_nmos ad=0.17858p pd=1.944u as=0.39145p ps=4.598u w=0.42u l=0.13u
+**devattr s=5184,304 d=3192,160
+M27 a_612_127# a_324_432# a_550_127# VSS sg13_lv_nmos ad=0.23124p pd=2.765u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=1512,120 d=5712,304
+M28 Q a_2420_412# VSS VSS sg13_lv_nmos ad=0.35446p pd=2.55022u as=1.12321p ps=5.71427u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+M29 a_681_505# a_324_432# VDD VDD sg13_lv_pmos ad=0 pd=0 as=0.47248p ps=2.46279u w=0.42u l=0.13u
+**devattr s=6252,244 d=2520,144
+M30 a_612_127# a_843_236# a_298_337# VSS sg13_lv_nmos ad=0.23124p pd=2.765u as=0.17858p ps=1.944u w=0.42u l=0.13u
+**devattr s=3192,160 d=9492,394
+M31 a_324_432# a_298_337# VDD VDD sg13_lv_pmos ad=0.6968p pd=8.20115u as=1.12495p ps=5.86378u w=1u l=0.13u
+**devattr s=14495,521 d=13600,536
+M32 VDD RESET_B a_298_337# VDD sg13_lv_pmos ad=0.47248p pd=2.46279u as=0.17858p ps=1.944u w=0.42u l=0.13u
+**devattr s=5880,308 d=6252,244
+M33 VSS RESET_B a_132_114# VSS sg13_lv_nmos ad=0.63749p pd=3.24323u as=0 ps=0 w=0.42u l=0.13u
+**devattr s=2436,142 d=6504,283
+.ends
+
+.subckt ShiftRegister CLK RESET_B DIN Vg[0] Vg[1] VDD VSS QOUT
+
+Xsg13g2_dfrbp_1_0 Vg[0] sg13g2_dfrbp_1_0/Q_N CLK DIN RESET_B VDD VSS sg13g2_dfrbp_1
+Xsg13g2_dfrbp_1_1 Vg[1] sg13g2_dfrbp_1_1/Q_N CLK sg13g2_buf_1_1/X RESET_B VDD VSS sg13g2_dfrbp_1
+
+Xsg13g2_buf_1_0 sg13g2_buf_1_1/A Vg[0] VDD VSS sg13g2_buf_1
+Xsg13g2_buf_1_1 sg13g2_buf_1_1/X sg13g2_buf_1_1/A VDD VSS sg13g2_buf_1
+Xsg13g2_buf_1_2 sg13g2_buf_1_3/A Vg[1] VDD VSS sg13g2_buf_1
+Xsg13g2_buf_1_3  QOUT sg13g2_buf_1_3/A VDD VSS sg13g2_buf_1
+.ends
+

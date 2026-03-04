@@ -1,0 +1,295 @@
+timestamp 1772473708
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+use ihp130_VinjNOR3 ihp130_VinjNOR3_3 1 0 2232 0 1 -1232
+use ihp130_VinjNOR3 ihp130_VinjNOR3_2 1 0 2232 0 1 -912
+use ihp130_VinjNOR3 ihp130_VinjNOR3_1 1 0 2232 0 1 -594
+use ihp130_VinjNOR3 ihp130_VinjNOR3_0 1 0 2232 0 1 -276
+use ihp130_VinjInv2 ihp130_VinjInv2_2 1 0 392 0 1 -960
+use ihp130_VinjInv2 ihp130_VinjInv2_1 1 0 392 0 1 -616
+use ihp130_VinjInv2 ihp130_VinjInv2_0 1 0 392 0 1 -272
+port "Output[3]" 9 3710 -802 3732 -762 m3
+port "Output[2]" 8 3710 -482 3732 -442 m3
+port "ENABLE" 3 -420 -438 -392 -398 m3
+port "Output[1]" 7 3710 -164 3732 -124 m3
+port "Input[1]" 2 -420 -94 -392 -54 m3
+port "Output[0]" 6 3710 154 3732 194 m3
+port "Input[0]" 1 -420 250 -392 290 m3
+port "GND" 5 590 294 670 344 m2
+port "VINJ" 4 -300 294 -220 344 m2
+node "Output[3]" 0 16.9647 3710 -802 m3 0 0 0 0 0 0 0 0 880 124 0 0 0 0 0 0 0 0
+node "Output[2]" 0 14.2226 3710 -482 m3 0 0 0 0 0 0 0 0 880 124 0 0 0 0 0 0 0 0
+node "ENABLE" 0 12.5102 -420 -438 m3 0 0 0 0 0 0 0 0 1120 136 0 0 0 0 0 0 0 0
+node "Output[1]" 0 14.2178 3710 -164 m3 0 0 0 0 0 0 0 0 880 124 0 0 0 0 0 0 0 0
+node "Input[1]" 0 8.08716 -420 -94 m3 0 0 0 0 0 0 0 0 1120 136 0 0 0 0 0 0 0 0
+node "Output[0]" 0 16.96 3710 154 m3 0 0 0 0 0 0 0 0 880 124 0 0 0 0 0 0 0 0
+node "Input[0]" 0 15.2621 -420 250 m3 0 0 0 0 0 0 0 0 1120 136 0 0 0 0 0 0 0 0
+node "m2_1324_n906#" 4 391.03 1324 -906 m2 0 0 0 0 0 0 120000 2600 46696 2512 0 0 0 0 0 0 0 0
+node "m2_1176_n906#" 3 165.339 1176 -906 m2 0 0 0 0 0 0 120000 2600 42456 2176 0 0 0 0 0 0 0 0
+node "m2_1028_n906#" 4 142.456 1028 -906 m2 0 0 0 0 0 0 120000 2600 50088 2724 0 0 0 0 0 0 0 0
+node "m2_880_n906#" 4 194.075 880 -906 m2 0 0 0 0 0 0 120000 2600 56272 3032 0 0 0 0 0 0 0 0
+node "m2_590_n956#" 0 56.0349 590 -956 m2 0 0 0 0 0 0 19772 776 0 0 0 0 0 0 0 0 0 0
+node "m2_732_n906#" 4 387.529 732 -906 m2 0 0 0 0 0 0 120000 2600 67592 3212 0 0 0 0 0 0 0 0
+node "GND" 0 35.8912 590 294 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "VINJ" 0 33.1757 -300 294 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "m1_n316_n824#" 3 824.397 -316 -824 m1 0 0 0 0 164808 4092 18760 752 0 0 0 0 0 0 0 0 0 0
+node "m1_590_n40#" 7 1261.03 590 -40 m1 0 0 0 0 114942 4930 32432 1572 0 0 0 0 0 0 0 0 0 0
+node "w_n420_n956#" 0 0 -420 -956 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_n420_n956#" "m2_880_n906#" 3.02979
+cap "m2_732_n906#" "m2_1324_n906#" 161.858
+cap "m1_590_n40#" "m2_1028_n906#" 40.432
+cap "w_n420_n956#" "m1_n316_n824#" 182.705
+cap "m2_1176_n906#" "m2_732_n906#" 300.463
+cap "m2_1028_n906#" "m2_1324_n906#" 475.477
+cap "Output[1]" "Output[2]" 3.07014
+cap "m2_732_n906#" "Input[0]" 1.3875
+cap "m2_732_n906#" "m2_590_n956#" 162.954
+cap "m2_1176_n906#" "m2_1028_n906#" 1536.21
+cap "m1_590_n40#" "w_n420_n956#" 3.47948
+cap "VINJ" "w_n420_n956#" 6.07713
+cap "m1_n316_n824#" "m2_880_n906#" 44.5476
+cap "w_n420_n956#" "m2_1324_n906#" 4.45142
+cap "m2_1176_n906#" "ENABLE" 0.0118622
+cap "Output[3]" "Output[2]" 3.04757
+cap "m2_1176_n906#" "w_n420_n956#" 2.44765
+cap "Output[1]" "Output[0]" 3.07014
+cap "w_n420_n956#" "Input[0]" 0.402073
+cap "m1_590_n40#" "m2_880_n906#" 38.6231
+cap "w_n420_n956#" "m2_590_n956#" 8.4714
+cap "m1_n316_n824#" "GND" 0.0301042
+cap "m1_590_n40#" "m1_n316_n824#" 43.0151
+cap "m2_1324_n906#" "m2_880_n906#" 429.15
+cap "VINJ" "m1_n316_n824#" 3.36512
+cap "Input[1]" "Input[0]" 3.56423
+cap "m2_1324_n906#" "m1_n316_n824#" 51.8791
+cap "m2_1176_n906#" "m2_880_n906#" 399.466
+cap "m2_732_n906#" "m2_1028_n906#" 747.558
+cap "m1_590_n40#" "GND" 7.89239
+cap "VINJ" "GND" 2.54857
+cap "m2_880_n906#" "m2_590_n956#" 0.878357
+cap "m2_1176_n906#" "m1_n316_n824#" 50.1499
+cap "m2_732_n906#" "ENABLE" 0.0819734
+cap "m1_590_n40#" "m2_1324_n906#" 52.094
+cap "m1_n316_n824#" "m2_590_n956#" 56.8997
+cap "m2_732_n906#" "w_n420_n956#" 29.4874
+cap "m2_1028_n906#" "ENABLE" 0.0430256
+cap "m2_1176_n906#" "m1_590_n40#" 38.7378
+cap "m2_590_n956#" "GND" 1.4916
+cap "w_n420_n956#" "m2_1028_n906#" 3.06895
+cap "m1_590_n40#" "m2_590_n956#" 3.11855
+cap "m2_1176_n906#" "m2_1324_n906#" 1436.84
+cap "m2_732_n906#" "Input[1]" 0.0148612
+cap "w_n420_n956#" "ENABLE" 5.2859
+cap "m2_1324_n906#" "m2_590_n956#" 0.143581
+cap "Input[1]" "m2_1028_n906#" 1.37264
+cap "m2_732_n906#" "m2_880_n906#" 1585.28
+cap "m2_1176_n906#" "m2_590_n956#" 0.233338
+cap "m2_732_n906#" "m1_n316_n824#" 42.6428
+cap "Input[1]" "ENABLE" 3.56423
+cap "m2_1028_n906#" "m2_880_n906#" 1621.61
+cap "Input[1]" "w_n420_n956#" 4.16472
+cap "m2_1028_n906#" "m1_n316_n824#" 41.4033
+cap "m2_880_n906#" "ENABLE" 0.053085
+cap "m1_590_n40#" "m2_732_n906#" 78.7768
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_0/Output" 0.000670001
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_3/Input[0]" 14.2441
+cap "ihp130_VinjNOR3_2/a_n398_408#" "ihp130_VinjNOR3_3/Input[2]" 0.0406182
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_3/Input[2]" 2.30204
+cap "ihp130_VinjNOR3_3/Output" "ihp130_VinjNOR3_3/Input[0]" 0.0188207
+cap "ihp130_VinjInv2_2/GND" "ihp130_VinjNOR3_3/Input[1]" 4.40962
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_3/Input[0]" 2.54411
+cap "ihp130_VinjInv2_2/Input" "ihp130_VinjNOR3_3/Input[2]" 1.85318
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_3/VINJ" -16.9104
+cap "ihp130_VinjNOR3_2/a_n114_408#" "ihp130_VinjNOR3_3/Input[2]" 0.00875892
+cap "ihp130_VinjInv2_2/Input" "ihp130_VinjNOR3_3/Input[0]" 3.06395
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_2/Input[1]" 0.907788
+cap "ihp130_VinjNOR3_1/a_n398_408#" "ihp130_VinjNOR3_2/Input[1]" 0.00781656
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_2/Input[1]" 153.711
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/Input[2]" 100.248
+cap "ihp130_VinjInv2_2/Input" "ihp130_VinjNOR3_3/VINJ" 96.4254
+cap "ihp130_VinjInv2_2/Input" "ihp130_VinjNOR3_2/a_n398_408#" 0.0994112
+cap "ihp130_VinjInv2_2/GND" "ihp130_VinjNOR3_3/Input[2]" 9.04863
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/Input[0]" 100.335
+cap "ihp130_VinjInv2_2/Input" "ihp130_VinjNOR3_1/Input[0]" 6.69273
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_2/Input[1]" 36.9165
+cap "ihp130_VinjInv2_2/GND" "ihp130_VinjNOR3_3/Input[0]" 8.90716
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_2/Input[1]" 151.055
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_0/a_n114_408#" 0.0311767
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/VINJ" 23.2817
+cap "ihp130_VinjNOR3_2/Output" "ihp130_VinjNOR3_3/Input[2]" 0.00113255
+cap "ihp130_VinjInv2_2/GND" "ihp130_VinjNOR3_3/VINJ" 34.9068
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_3/Input[1]" 2.11877
+cap "ihp130_VinjInv2_2/Input" "ihp130_VinjNOR3_2/a_n114_408#" 0.0677603
+cap "ihp130_VinjNOR3_2/Output" "ihp130_VinjNOR3_3/Input[0]" 0.0188207
+cap "ihp130_VinjNOR3_0/a_n398_408#" "ihp130_VinjNOR3_3/Input[0]" 0.0597114
+cap "ihp130_VinjInv2_2/Input" "ihp130_VinjNOR3_2/Input[1]" 148.384
+cap "ihp130_VinjInv2_2/GND" "ihp130_VinjNOR3_1/Input[0]" 615.34
+cap "ihp130_VinjNOR3_0/Output" "ihp130_VinjNOR3_3/Input[0]" 0.00874696
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_3/Input[0]" 0.331268
+cap "ihp130_VinjInv2_2/Input" "ihp130_VinjNOR3_3/Input[1]" 153.216
+cap "ihp130_VinjInv2_2/GND" "ihp130_VinjInv2_2/Input" 7.6381
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_2/Input[1]" 0.508332
+cap "ihp130_VinjInv2_2/GND" "ihp130_VinjNOR3_2/Input[1]" 11.2526
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_3/Input[2]" 110.513
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_2/Output" 0.0212078
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_2/a_n114_408#" 0.777222
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_3/a_n398_408#" 6.03882
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_3/GND" 1.04365
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_1/Input[0]" 0.530934
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_3/Input[1]" 11.2609
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjInv2_2/Input" 0.463122
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_2/a_n114_408#" 11.7238
+cap "ihp130_VinjNOR3_3/a_n398_408#" "ihp130_VinjNOR3_2/a_n398_408#" 22.632
+cap "ihp130_VinjNOR3_0/a_n114_408#" "ihp130_VinjNOR3_3/GND" 98.9683
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_3/Input[2]" 10.7766
+cap "ihp130_VinjNOR3_3/a_n114_408#" "ihp130_VinjNOR3_3/Input[2]" 0.774692
+cap "ihp130_VinjNOR3_0/a_n398_408#" "ihp130_VinjNOR3_3/GND" 91.9976
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/Input[0]" 2.76154
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_2/a_n114_408#" 0.769598
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_1/a_n114_408#" 4.5644
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_3/VINJ" 14.7649
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_3/a_n114_408#" 6.03882
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_1/Input[0]" 2.3946
+cap "ihp130_VinjNOR3_1/a_n398_408#" "ihp130_VinjNOR3_1/Input[0]" -0.426496
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_1/a_n398_408#" 2.22832
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/GND" 13.2307
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_1/Input[0]" 494.738
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_3/Input[2]" 473.946
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_2/a_n398_408#" 0.127695
+cap "ihp130_VinjNOR3_1/Output" "ihp130_VinjNOR3_3/Input[1]" 0.0671175
+cap "ihp130_VinjNOR3_1/a_n114_408#" "ihp130_VinjNOR3_3/Input[0]" 0.772151
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_3/Input[0]" 2.72829
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_1/Input[0]" -0.676406
+cap "ihp130_VinjNOR3_2/a_n398_408#" "ihp130_VinjNOR3_3/Input[2]" 0.777222
+cap "ihp130_VinjNOR3_1/a_n398_408#" "ihp130_VinjNOR3_2/a_n398_408#" 22.8341
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/a_n398_408#" 0.172054
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/Output" 0.0261805
+cap "ihp130_VinjNOR3_1/a_n398_408#" "ihp130_VinjNOR3_3/Input[0]" 0.772151
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_0/a_n114_408#" 0.0778892
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_3/Input[2]" 970.331
+cap "ihp130_VinjNOR3_1/a_n114_408#" "ihp130_VinjNOR3_3/GND" 51.9724
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_2/a_n398_408#" 11.7238
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_3/GND" 28.3421
+cap "ihp130_VinjNOR3_0/a_n398_408#" "ihp130_VinjNOR3_2/Input[1]" 0.127695
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_1/Input[0]" 52.8324
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_3/Input[0]" 37.3494
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_1/Output" 0.113316
+cap "ihp130_VinjNOR3_1/a_n398_408#" "ihp130_VinjNOR3_3/GND" 122.311
+cap "ihp130_VinjNOR3_0/a_n114_408#" "ihp130_VinjNOR3_3/Input[2]" -0.332839
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_3/GND" 148.893
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_0/Output" 0.0212078
+cap "ihp130_VinjNOR3_2/a_n398_408#" "ihp130_VinjNOR3_3/Input[0]" 0.769598
+cap "ihp130_VinjNOR3_0/a_n398_408#" "ihp130_VinjNOR3_3/Input[2]" -0.33546
+cap "ihp130_VinjNOR3_0/a_n114_408#" "ihp130_VinjNOR3_3/VINJ" -4.66316
+cap "ihp130_VinjNOR3_1/a_n114_408#" "ihp130_VinjNOR3_3/Input[1]" 0.222885
+cap "ihp130_VinjNOR3_3/VINJ" "ihp130_VinjNOR3_3/GND" 364.166
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_3/Input[1]" 29.2738
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_3/GND" 180.257
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjInv2_2/Input" 0.920044
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/a_n114_408#" 0.0995672
+cap "ihp130_VinjNOR3_3/a_n398_408#" "ihp130_VinjNOR3_3/Input[2]" 0.774692
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_2/a_n114_408#" 0.0778892
+cap "ihp130_VinjNOR3_1/a_n114_408#" "ihp130_VinjNOR3_2/a_n114_408#" 22.8341
+cap "ihp130_VinjNOR3_3/a_n114_408#" "ihp130_VinjNOR3_2/a_n114_408#" 22.632
+cap "ihp130_VinjNOR3_0/a_n398_408#" "ihp130_VinjNOR3_3/VINJ" -3.59497
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_1/a_n398_408#" 0.387797
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjInv2_2/Input" 0.466175
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/Input[2]" 13.6121
+cap "ihp130_VinjNOR3_1/Output" "ihp130_VinjNOR3_2/Input[1]" 9.8388
+cap "ihp130_VinjNOR3_2/Output" "ihp130_VinjNOR3_2/Input[1]" 0.0298792
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_3/VINJ" 0.893505
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/VINJ" 24.6861
+cap "ihp130_VinjNOR3_3/GND" "ihp130_VinjNOR3_1/Output" 483.931
+cap "ihp130_VinjNOR3_0/Output" "ihp130_VinjNOR3_3/VINJ" -1.93185
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_3/VINJ" 0.763967
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_3/VINJ" -1.06726
+cap "ihp130_VinjNOR3_3/GND" "ihp130_VinjNOR3_2/Output" 19.2634
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_0/Output" -8.49336
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_3/Input[1]" 2.22598
+cap "ihp130_VinjNOR3_0/Output" "ihp130_VinjNOR3_3/Input[1]" 0.0377607
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_0/Output" 0.0242244
+cap "ihp130_VinjNOR3_1/Output" "ihp130_VinjNOR3_3/VINJ" -0.654194
+cap "ihp130_VinjNOR3_3/Output" "ihp130_VinjNOR3_2/Input[1]" 45.7632
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_3/Input[0]" 773.436
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_3/Input[1]" 2.85633
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_1/Input[0]" 388.11
+cap "ihp130_VinjNOR3_2/Output" "ihp130_VinjNOR3_3/VINJ" 6.12919
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_1/Input[0]" 31.5645
+cap "ihp130_VinjNOR3_0/Output" "ihp130_VinjNOR3_1/Input[0]" 0.0630288
+cap "ihp130_VinjNOR3_3/GND" "ihp130_VinjNOR3_3/Output" 18.6387
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_1/Output" 99.345
+cap "ihp130_VinjNOR3_1/Output" "ihp130_VinjNOR3_3/Input[1]" 0.0377607
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_1/Output" 5.7747
+cap "ihp130_VinjNOR3_1/Output" "ihp130_VinjNOR3_0/Output" 41.9462
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_2/Output" 105.18
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_2/Output" 47.4459
+cap "ihp130_VinjNOR3_1/Output" "ihp130_VinjNOR3_1/Input[0]" 0.00954331
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_2/Output" 0.00627024
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_2/Output" 5.71334
+cap "ihp130_VinjNOR3_3/GND" "ihp130_VinjNOR3_2/Input[1]" 94.4569
+cap "ihp130_VinjNOR3_3/Output" "ihp130_VinjNOR3_3/VINJ" 4.15646
+cap "ihp130_VinjNOR3_1/Output" "ihp130_VinjNOR3_2/Output" 137.887
+cap "ihp130_VinjNOR3_2/Input[1]" "ihp130_VinjNOR3_3/VINJ" 44.7297
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_3/Output" 103.958
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_3/Output" 0.0377607
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_3/Output" 0.00627024
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_3/Output" 0.032261
+cap "ihp130_VinjNOR3_3/GND" "ihp130_VinjNOR3_3/VINJ" 16.0783
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_2/Input[1]" -1.54715
+cap "ihp130_VinjNOR3_3/Input[1]" "ihp130_VinjNOR3_2/Input[1]" 159.535
+cap "ihp130_VinjNOR3_3/Input[0]" "ihp130_VinjNOR3_2/Input[1]" 2.84218
+cap "ihp130_VinjNOR3_0/Output" "ihp130_VinjNOR3_2/Input[1]" -2.89234
+cap "ihp130_VinjNOR3_1/Input[0]" "ihp130_VinjNOR3_2/Input[1]" 2.4231
+cap "ihp130_VinjNOR3_2/Output" "ihp130_VinjNOR3_3/Output" 136.713
+cap "ihp130_VinjNOR3_3/GND" "ihp130_VinjNOR3_3/Input[1]" 11.2156
+cap "ihp130_VinjNOR3_3/Input[2]" "ihp130_VinjNOR3_3/GND" 64.1812
+cap "ihp130_VinjNOR3_3/GND" "ihp130_VinjNOR3_0/Output" 389.019
+cap "ihp130_VinjNOR3_3/GND" "ihp130_VinjNOR3_3/Input[0]" 106.809
+cap "ihp130_VinjNOR3_3/GND" "ihp130_VinjNOR3_1/Input[0]" 179.088
+merge "ihp130_VinjNOR3_0/Output" "Output[0]" -145.054 0 0 0 0 0 0 0 0 -880 -124 0 0 0 0 0 0 0 0
+merge "ihp130_VinjInv2_1/Output" "ihp130_VinjNOR3_1/Input[1]" -570.184 0 0 0 0 0 0 0 0 0 -240 0 0 0 0 0 0 0 0
+merge "ihp130_VinjNOR3_1/Input[1]" "ihp130_VinjNOR3_3/Input[1]"
+merge "ihp130_VinjNOR3_3/Input[1]" "m2_1176_n906#"
+merge "ihp130_VinjInv2_0/VINJ" "VINJ" -893.398 0 0 0 0 -7308 -364 -11760 -1388 0 0 0 0 0 0 0 0 0 0
+merge "VINJ" "ihp130_VinjInv2_1/VINJ"
+merge "ihp130_VinjInv2_1/VINJ" "ihp130_VinjInv2_2/VINJ"
+merge "ihp130_VinjInv2_2/VINJ" "w_n420_n956#"
+merge "w_n420_n956#" "ihp130_VinjNOR3_0/VINJ"
+merge "ihp130_VinjNOR3_0/VINJ" "ihp130_VinjNOR3_1/VINJ"
+merge "ihp130_VinjNOR3_1/VINJ" "ihp130_VinjNOR3_2/VINJ"
+merge "ihp130_VinjNOR3_2/VINJ" "ihp130_VinjNOR3_3/VINJ"
+merge "ihp130_VinjNOR3_3/VINJ" "m1_n316_n824#"
+merge "ihp130_VinjInv2_0/GND" "GND" -1742.5 0 0 0 0 0 0 -14992 -1724 0 0 0 0 0 0 0 0 0 0
+merge "GND" "ihp130_VinjInv2_1/GND"
+merge "ihp130_VinjInv2_1/GND" "m1_590_n40#"
+merge "m1_590_n40#" "ihp130_VinjInv2_2/GND"
+merge "ihp130_VinjInv2_2/GND" "m2_590_n956#"
+merge "m2_590_n956#" "ihp130_VinjNOR3_0/GND"
+merge "ihp130_VinjNOR3_0/GND" "ihp130_VinjNOR3_1/GND"
+merge "ihp130_VinjNOR3_1/GND" "ihp130_VinjNOR3_2/GND"
+merge "ihp130_VinjNOR3_2/GND" "ihp130_VinjNOR3_3/GND"
+merge "ihp130_VinjNOR3_3/GND" "VSUB"
+merge "ihp130_VinjNOR3_3/Output" "Output[3]" -228.609 0 0 0 0 0 0 0 0 -880 -124 0 0 0 0 0 0 0 0
+merge "ihp130_VinjInv2_0/Output" "ihp130_VinjNOR3_2/Input[0]" -1025.03 0 0 0 0 0 0 0 0 -240 -252 0 0 0 0 0 0 0 0
+merge "ihp130_VinjNOR3_2/Input[0]" "ihp130_VinjNOR3_3/Input[0]"
+merge "ihp130_VinjNOR3_3/Input[0]" "m2_880_n906#"
+merge "ihp130_VinjNOR3_2/Output" "Output[2]" -342.115 0 0 0 0 0 0 0 0 -880 -124 0 0 0 0 0 0 0 0
+merge "ihp130_VinjNOR3_1/Output" "Output[1]" -351.119 0 0 0 0 0 0 0 0 -880 -124 0 0 0 0 0 0 0 0
+merge "ihp130_VinjInv2_2/Output" "ihp130_VinjNOR3_0/Input[2]" -1911.5 0 0 0 0 0 0 0 0 0 -400 0 0 0 0 0 0 0 0
+merge "ihp130_VinjNOR3_0/Input[2]" "ihp130_VinjNOR3_1/Input[2]"
+merge "ihp130_VinjNOR3_1/Input[2]" "ihp130_VinjNOR3_2/Input[2]"
+merge "ihp130_VinjNOR3_2/Input[2]" "ihp130_VinjNOR3_3/Input[2]"
+merge "ihp130_VinjNOR3_3/Input[2]" "m2_1324_n906#"
+merge "ihp130_VinjInv2_1/Input" "Input[1]" -715.181 0 0 0 0 0 0 0 0 -1120 -376 0 0 0 0 0 0 0 0
+merge "Input[1]" "ihp130_VinjNOR3_0/Input[1]"
+merge "ihp130_VinjNOR3_0/Input[1]" "ihp130_VinjNOR3_2/Input[1]"
+merge "ihp130_VinjNOR3_2/Input[1]" "m2_1028_n906#"
+merge "ihp130_VinjInv2_0/Input" "Input[0]" -804.231 0 0 0 0 0 0 0 0 -1120 -376 0 0 0 0 0 0 0 0
+merge "Input[0]" "ihp130_VinjNOR3_0/Input[0]"
+merge "ihp130_VinjNOR3_0/Input[0]" "ihp130_VinjNOR3_1/Input[0]"
+merge "ihp130_VinjNOR3_1/Input[0]" "m2_732_n906#"
+merge "ihp130_VinjInv2_2/Input" "ENABLE" -329.41 0 0 0 0 0 0 0 0 -1120 -136 0 0 0 0 0 0 0 0

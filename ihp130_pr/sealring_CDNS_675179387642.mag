@@ -1,0 +1,48 @@
+magic
+tech ihp-sg13g2
+timestamp 1772143227
+<< error_p >>
+rect -130 130 0 146
+rect 10800 130 10930 146
+<< pwell >>
+rect -13 -13 10813 363
+<< sealcont >>
+rect 0 130 10800 146
+<< psubdiff >>
+rect 0 146 10800 350
+rect 0 0 10800 130
+<< metal1 >>
+rect 0 149 10800 350
+rect 0 0 10800 130
+<< sealvia1 >>
+rect 0 130 10800 149
+<< metal2 >>
+rect 0 149 10800 350
+rect 0 0 10800 130
+<< sealvia2 >>
+rect 0 130 10800 149
+<< metal3 >>
+rect 0 149 10800 350
+rect 0 0 10800 130
+<< sealvia3 >>
+rect 0 130 10800 149
+<< metal4 >>
+rect 0 149 10800 350
+rect 0 0 10800 130
+<< sealvia4 >>
+rect 0 130 10800 149
+<< metal5 >>
+rect 0 172 10800 350
+rect 0 0 10800 130
+<< sealvia5 >>
+rect 0 130 10800 172
+<< metal6 >>
+rect 0 220 10800 350
+rect 0 0 10800 130
+<< sealvia6 >>
+rect 0 130 10800 220
+<< metal7 >>
+rect 0 0 10800 350
+<< seal >>
+rect 0 -720 10800 -300
+<< end >>

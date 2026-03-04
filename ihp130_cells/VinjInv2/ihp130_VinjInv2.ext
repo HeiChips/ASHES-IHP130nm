@@ -1,0 +1,21 @@
+timestamp 1771802919
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+parameters sg13_hv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_hv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+port "Output" 1 294 418 322 458 m3
+port "Input" 2 -812 522 -784 562 m3
+port "VINJ" 3 -692 566 -612 616 m2
+port "GND" 4 198 566 278 616 m2
+node "Output" 2 449.025 294 418 m3 0 0 0 0 32256 936 21960 852 35720 1540 0 0 0 0 0 0 0 0
+node "Input" 4 730.44 -812 522 m3 0 0 0 0 11024 632 13144 672 47760 2428 0 0 0 0 0 0 0 0
+node "VINJ" 1 157.008 -692 566 m2 0 0 0 0 14064 536 22640 888 0 0 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 198 566 m2 0 0 0 0 13920 532 23128 884 0 0 0 0 0 0 0 0 0 0
+cap "Input" "Output" 583.103
+cap "Output" "VINJ" 86.7324
+cap "Input" "VINJ" 221.452
+device msubckt sg13_hv_nmos -14 396 -13 397 l=106 w=84 "GND" "Input" 212 0 "Output" 84 5712,304 "GND" 84 5712,304
+device msubckt sg13_hv_pmos -504 396 -503 397 l=106 w=84 "VINJ" "Input" 212 0 "VINJ" 84 5712,304 "Output" 84 5712,304

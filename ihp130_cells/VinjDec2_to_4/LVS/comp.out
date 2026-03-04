@@ -1,0 +1,73 @@
+
+Subcircuit summary:
+Circuit 1: ihp130_VinjNOR3                 |Circuit 2: ihp130_VinjNOR3                 
+-------------------------------------------|-------------------------------------------
+sg13_hv_pmos (3)                           |sg13_hv_pmos (3)                           
+sg13_hv_nmos (3)                           |sg13_hv_nmos (3)                           
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ihp130_VinjNOR3                 |Circuit 2: ihp130_VinjNOR3                 
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+VINJ                                       |VINJ                                       
+Output                                     |Output                                     
+Input[0]                                   |Input[0]                                   
+Input[2]                                   |Input[2]                                   
+Input[1]                                   |Input[1]                                   
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ihp130_VinjNOR3 and ihp130_VinjNOR3 are equivalent.
+
+Subcircuit summary:
+Circuit 1: ihp130_VinjInv2                 |Circuit 2: ihp130_VinjInv2                 
+-------------------------------------------|-------------------------------------------
+sg13_hv_pmos (1)                           |sg13_hv_pmos (1)                           
+sg13_hv_nmos (1)                           |sg13_hv_nmos (1)                           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ihp130_VinjInv2                 |Circuit 2: ihp130_VinjInv2                 
+-------------------------------------------|-------------------------------------------
+Output                                     |Output                                     
+Input                                      |Input                                      
+GND                                        |GND                                        
+VINJ                                       |VINJ                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ihp130_VinjInv2 and ihp130_VinjInv2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: ihp130_VinjDec2_to_4            |Circuit 2: ihp130_VinjDec2_to_4            
+-------------------------------------------|-------------------------------------------
+ihp130_VinjNOR3 (4)                        |ihp130_VinjNOR3 (4)                        
+ihp130_VinjInv2 (3)                        |ihp130_VinjInv2 (3)                        
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ihp130_VinjDec2_to_4            |Circuit 2: ihp130_VinjDec2_to_4            
+-------------------------------------------|-------------------------------------------
+ENABLE                                     |ENABLE                                     
+Output[3]                                  |Output[3]                                  
+Output[2]                                  |Output[2]                                  
+Output[1]                                  |Output[1]                                  
+Output[0]                                  |Output[0]                                  
+VINJ                                       |VINJ                                       
+GND                                        |GND                                        
+Input[0]                                   |Input[0]                                   
+Input[1]                                   |Input[1]                                   
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ihp130_VinjDec2_to_4 and ihp130_VinjDec2_to_4 are equivalent.
+
+Final result: Circuits match uniquely.
+.

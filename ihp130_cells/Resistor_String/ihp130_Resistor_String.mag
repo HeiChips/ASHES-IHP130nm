@@ -1,6 +1,6 @@
 magic
 tech ihp-sg13g2
-timestamp 1772123764
+timestamp 1772126167
 << poly >>
 rect 981 562 1024 621
 rect 2024 605 2067 621
@@ -219,4 +219,12 @@ flabel metal2 2024 2 2067 11 1 FreeSans 40 0 0 0 VREFout
 port 1 n
 flabel metal2 2024 643 2067 652 1 FreeSans 40 0 0 0 VREFin
 port 2 n
+flabel metal3 938 540 951 572 1 FreeSans 40 90 0 0 Node[0]
+port 3 n
+flabel metal3 938 383 951 415 1 FreeSans 40 90 0 0 Node[1]
+port 4 n
+flabel metal3 938 225 951 257 1 FreeSans 40 90 0 0 Node[2]
+port 5 n
+flabel metal3 938 68 951 100 1 FreeSans 40 90 0 0 Node[3]
+port 6 n
 << end >>

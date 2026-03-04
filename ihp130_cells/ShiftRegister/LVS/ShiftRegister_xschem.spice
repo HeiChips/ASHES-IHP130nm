@@ -1,0 +1,12 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/ShiftRegister/ShiftRegister.sch
+.subckt ShiftRegister CLK RESET_B DIN Vg[0] Vg[1] VDD VSS QOUT
+*.PININFO CLK:B RESET_B:B DIN:I Vg[0]:O Vg[1]:O VDD:B VSS:B QOUT:O
+x1 Vg[0] net1 CLK DIN RESET_B VDD VSS sg13g2_dfrbp_1
+x2 Vg[1] net2 CLK net4 RESET_B VDD VSS sg13g2_dfrbp_1
+* noconn #net1
+* noconn #net2
+x3 net3 Vg[0] VDD VSS sg13g2_buf_1
+x4 net4 net3 VDD VSS sg13g2_buf_1
+x5 net5 Vg[1] VDD VSS sg13g2_buf_1
+x6 QOUT net5 VDD VSS sg13g2_buf_1
+.ends

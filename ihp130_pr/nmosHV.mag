@@ -1,0 +1,33 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1772143227
+<< pwell >>
+rect -26 -26 252 146
+<< hvnmos >>
+rect 68 0 158 120
+<< hvndiff >>
+rect 0 76 68 120
+rect 0 44 14 76
+rect 46 44 68 76
+rect 0 0 68 44
+rect 158 76 226 120
+rect 158 44 180 76
+rect 212 44 226 76
+rect 158 0 226 44
+<< hvndiffc >>
+rect 14 44 46 76
+rect 180 44 212 76
+<< poly >>
+rect 68 120 158 156
+rect 68 -36 158 0
+<< metal1 >>
+rect 14 76 46 120
+rect 14 0 46 44
+rect 178 76 214 120
+rect 178 44 180 76
+rect 212 44 214 76
+rect 178 0 214 44
+<< labels >>
+flabel comment s 113 60 113 60 0 FreeSans 200 90 0 0 nmosHV
+<< end >>

@@ -1,0 +1,13 @@
+magic
+tech ihp-sg13g2
+timestamp 1772143227
+<< metal6 >>
+rect -3 -95 3 95
+<< via6 >>
+rect -193 -95 -3 95
+rect 3 -95 193 95
+<< metal7 >>
+rect -193 95 193 100
+rect -3 -95 3 95
+rect -193 -100 193 -95
+<< end >>

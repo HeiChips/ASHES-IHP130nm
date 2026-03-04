@@ -1,0 +1,61 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/Scanner/Scanner.sch
+**.subckt Scanner CLK RESET_B DIN VDD VSS QOUT INPUT[0],INPUT[1],INPUT[2],INPUT[3] OUTPUT
+*.iopin CLK
+*.iopin RESET_B
+*.ipin DIN
+*.iopin VDD
+*.iopin VSS
+*.opin QOUT
+*.ipin INPUT[0],INPUT[1],INPUT[2],INPUT[3]
+*.opin OUTPUT
+x5 SELECT[0] net3 CLK DIN RESET_B VDD VSS sg13g2_dfrbp_1
+x6 SELECT[1] net4 CLK net2 RESET_B VDD VSS sg13g2_dfrbp_1
+x7 net5 SELECT[0] VDD VSS sg13g2_buf_1
+x8 net2 net5 VDD VSS sg13g2_buf_1
+x9 net6 SELECT[1] VDD VSS sg13g2_buf_1
+x10 net1 net6 VDD VSS sg13g2_buf_1
+* noconn #net3
+* noconn #net4
+x1 SELECT[0] SELECT[1] SELECT[2] SELECT[3] OUTPUT INPUT[0] INPUT[1] INPUT[2] INPUT[3] VDD VSS 4TgateVinj
+x2 SELECT[2] net8 CLK net1 RESET_B VDD VSS sg13g2_dfrbp_1
+x3 SELECT[3] net9 CLK net7 RESET_B VDD VSS sg13g2_dfrbp_1
+x4 net10 SELECT[2] VDD VSS sg13g2_buf_1
+x11 net7 net10 VDD VSS sg13g2_buf_1
+x12 net11 SELECT[3] VDD VSS sg13g2_buf_1
+x13 QOUT net11 VDD VSS sg13g2_buf_1
+* noconn #net8
+* noconn #net9
+**.ends
+
+* expanding   symbol:  4TgateVinj/4TgateVinj.sym # of pins=5
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/4TgateVinj/4TgateVinj.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/4TgateVinj/4TgateVinj.sch
+.subckt 4TgateVinj SELECT[0] SELECT[1] SELECT[2] SELECT[3] OUTPUT INPUT[0] INPUT[1] INPUT[2] INPUT[3] VINJ GND
+*.ipin SELECT[0],SELECT[1],SELECT[2],SELECT[3]
+*.ipin INPUT[0],INPUT[1],INPUT[2],INPUT[3]
+*.ipin VINJ
+*.ipin GND
+*.opin OUTPUT
+x1 SELECT[0] INPUT[0] VINJ GND OUTPUT ihp130_TgateVinj02
+x2 SELECT[1] INPUT[1] VINJ GND OUTPUT ihp130_TgateVinj02
+x3 SELECT[2] INPUT[2] VINJ GND OUTPUT ihp130_TgateVinj02
+x4 SELECT[3] INPUT[3] VINJ GND OUTPUT ihp130_TgateVinj02
+.ends
+
+
+* expanding   symbol:  TgateVinj02/ihp130_TgateVinj02.sym # of pins=5
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/TgateVinj02/ihp130_TgateVinj02.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/TgateVinj02/ihp130_TgateVinj02.sch
+.subckt ihp130_TgateVinj02 SELECT INPUT VINJ GND OUTPUT
+*.ipin SELECT
+*.ipin INPUT
+*.ipin VINJ
+*.ipin GND
+*.opin OUTPUT
+XM1 Selb SELECT VINJ VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+XM2 Selb SELECT GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+XM3 INPUT Selb OUTPUT VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+XM4 INPUT SELECT OUTPUT GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+.ends
+
+.end

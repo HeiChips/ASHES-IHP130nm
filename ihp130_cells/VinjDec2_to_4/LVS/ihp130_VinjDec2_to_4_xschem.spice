@@ -1,0 +1,35 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjDec2_to_4/ihp130_VinjDec2_to_4.sch
+.subckt ihp130_VinjDec2_to_4 VINJ Output[0] Output[1] Output[2] Output[3] Input[0] Input[1] GND ENABLE
+*.PININFO VINJ:I Output[0:3]:O Input[0:1]:I GND:I ENABLE:I
+x2 VINJ Input[0] net1 GND ihp130_VinjInv2
+x6 VINJ Input[1] net2 GND ihp130_VinjInv2
+x7 VINJ ENABLE ENABLE_B GND ihp130_VinjInv2
+x1 VINJ Input[0] Input[1] Output[0] ENABLE_B GND ihp130_VinjNOR3
+x3 VINJ Input[0] net2 Output[1] ENABLE_B GND ihp130_VinjNOR3
+x4 VINJ net1 Input[1] Output[2] ENABLE_B GND ihp130_VinjNOR3
+x5 VINJ net1 net2 Output[3] ENABLE_B GND ihp130_VinjNOR3
+.ends
+
+* expanding   symbol:  VinjInv2/ihp130_VinjInv2.sym # of pins=4
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjInv2/ihp130_VinjInv2.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjInv2/ihp130_VinjInv2.sch
+.subckt ihp130_VinjInv2 VINJ Input Output GND
+*.PININFO VINJ:I GND:I Input:I Output:O
+M1 Output Input GND GND sg13_hv_nmos w=0.42u l=0.53u ng=1 m=1
+M2 Output Input VINJ VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  VinjNOR3/ihp130_VinjNOR3.sym # of pins=6
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjNOR3/ihp130_VinjNOR3.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjNOR3/ihp130_VinjNOR3.sch
+.subckt ihp130_VinjNOR3 VINJ Input[0] Input[1] Output Input[2] GND
+*.PININFO Input[0]:I VINJ:I GND:I Output:O Input[1]:I Input[2]:I
+M1 net1 Input[2] VINJ VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+M2 net2 Input[0] net1 VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+M3 Output Input[1] net2 VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+M4 Output Input[1] GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+M5 Output Input[2] GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+M6 Output Input[0] GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+.ends
+

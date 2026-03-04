@@ -1,0 +1,29 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1772143227
+<< pwell >>
+rect -656 590 656 742
+rect -656 -500 -504 590
+rect 504 -500 656 590
+rect -656 -652 656 -500
+<< psubdiff >>
+rect -630 616 630 716
+rect -630 -526 -530 616
+rect 530 -526 630 616
+rect -630 -626 630 -526
+<< metal1 >>
+rect -183 202 185 250
+rect -193 -252 195 -204
+<< metal2 >>
+rect -149 -156 149 154
+use npn13G2_base_CDNS_675179387640  npn13G2_base_CDNS_675179387640_0
+timestamp 1772143227
+transform 1 0 0 0 -1 0
+box -211 -462 211 494
+<< labels >>
+flabel comment s -395 -509 -395 -509 2 FreeSans 700 90 0 0 Ae=1*1*0.07*0.90
+flabel comment s 0 -1 0 -1 0 FreeSans 1490 0 0 0 E
+flabel comment s 1 -228 1 -228 0 FreeSans 240 0 0 0 B
+flabel comment s 1 226 1 226 0 FreeSans 240 0 0 0 C
+<< end >>

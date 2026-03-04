@@ -1,0 +1,36 @@
+magic
+tech ihp-sg13g2
+timestamp 1772143227
+use sealring_CDNS_675179387642  sealring_CDNS_675179387642_0
+timestamp 1772143227
+transform 1 0 2100 0 1 0
+box -130 -720 10930 363
+use sealring_CDNS_675179387642  sealring_CDNS_675179387642_1
+timestamp 1772143227
+transform 0 -1 15000 1 0 2100
+box -130 -720 10930 363
+use sealring_CDNS_675179387642  sealring_CDNS_675179387642_2
+timestamp 1772143227
+transform -1 0 12900 0 -1 15000
+box -130 -720 10930 363
+use sealring_CDNS_675179387642  sealring_CDNS_675179387642_3
+timestamp 1772143227
+transform 0 1 0 -1 0 12900
+box -130 -720 10930 363
+use sealring_corner_CDNS_675179387641  sealring_corner_CDNS_675179387641_0
+timestamp 1772143227
+transform 1 0 0 0 1 0
+box -720 -720 2230 2230
+use sealring_corner_CDNS_675179387641  sealring_corner_CDNS_675179387641_1
+timestamp 1772143227
+transform 0 -1 15000 1 0 0
+box -720 -720 2230 2230
+use sealring_corner_CDNS_675179387641  sealring_corner_CDNS_675179387641_2
+timestamp 1772143227
+transform -1 0 15000 0 -1 15000
+box -720 -720 2230 2230
+use sealring_corner_CDNS_675179387641  sealring_corner_CDNS_675179387641_3
+timestamp 1772143227
+transform 0 1 0 -1 0 15000
+box -720 -720 2230 2230
+<< end >>

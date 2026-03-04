@@ -1,0 +1,10 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjNOR3/ihp130_VinjNOR3.sch
+.subckt ihp130_VinjNOR3 VINJ Input[0] Input[1] Output Input[2] GND
+*.PININFO Input[0]:I VINJ:I GND:I Output:O Input[1]:I Input[2]:I
+M1 net1 Input[2] VINJ VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+M2 net2 Input[0] net1 VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+M3 Output Input[1] net2 VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+M4 Output Input[1] GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+M5 Output Input[2] GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+M6 Output Input[0] GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+.ends

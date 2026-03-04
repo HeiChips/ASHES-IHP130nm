@@ -1,0 +1,95 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/CellVoltageDAC/CellVoltageDAC.sch
+.subckt CellVoltageDAC Input[0] Input[1] ENABLE GND VINJ VREFin VREFout OUTPUT
+*.PININFO Input[0:1]:I ENABLE:I GND:I VINJ:I VREFin:I VREFout:I OUTPUT:I
+x1 VREFout VREFin OUTPUT GND VINJ net1_3 net1_2 net1_1 net1_0 ihp130_DAC_cell
+x2 Input[0] Input[1] ENABLE net1_3 net1_2 net1_1 net1_0 GND VINJ ihp130_VinjDec2_to_4
+.ends
+
+* expanding   symbol:  DAC_Cell/ihp130_DAC_cell.sym # of pins=6
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/DAC_Cell/ihp130_DAC_cell.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/DAC_Cell/ihp130_DAC_cell.sch
+.subckt ihp130_DAC_cell VREFout VREFin OUTPUT GND VINJ SELECT[0] SELECT[1] SELECT[2] SELECT[3]
+*.PININFO GND:I VINJ:I SELECT[0:3]:I VREFin:I VREFout:O OUTPUT:O
+x1 SELECT[0] SELECT[1] SELECT[2] SELECT[3] OUTPUT INPUT[0] INPUT[1] INPUT[2] INPUT[3] VINJ GND 4TgateVinj
+x2 VREFin INPUT[0] INPUT[1] INPUT[2] INPUT[3] VREFout ihp130_resistor_string
+.ends
+
+
+* expanding   symbol:  VinjDec2_to_4/ihp130_VinjDec2_to_4.sym # of pins=5
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjDec2_to_4/ihp130_VinjDec2_to_4.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjDec2_to_4/ihp130_VinjDec2_to_4.sch
+.subckt ihp130_VinjDec2_to_4 Input[0] Input[1] ENABLE Output[0] Output[1] Output[2] Output[3] GND VINJ
+*.PININFO VINJ:I Output[0:3]:O Input[0:1]:I GND:I ENABLE:I
+x2 VINJ Input[0] net1 GND ihp130_VinjInv2
+x6 VINJ Input[1] net2 GND ihp130_VinjInv2
+x7 VINJ ENABLE ENABLE_B GND ihp130_VinjInv2
+x1 VINJ Input[0] Input[1] Output[0] ENABLE_B GND ihp130_VinjNOR3
+x3 VINJ Input[0] net2 Output[1] ENABLE_B GND ihp130_VinjNOR3
+x4 VINJ net1 Input[1] Output[2] ENABLE_B GND ihp130_VinjNOR3
+x5 VINJ net1 net2 Output[3] ENABLE_B GND ihp130_VinjNOR3
+.ends
+
+
+* expanding   symbol:  4TgateVinj/4TgateVinj.sym # of pins=5
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/4TgateVinj/4TgateVinj.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/4TgateVinj/4TgateVinj.sch
+.subckt 4TgateVinj SELECT[0] SELECT[1] SELECT[2] SELECT[3] OUTPUT INPUT[0] INPUT[1] INPUT[2] INPUT[3] VINJ GND
+*.PININFO SELECT[0:3]:I INPUT[0:3]:I VINJ:I GND:I OUTPUT:O
+x1 SELECT[0] INPUT[0] VINJ GND OUTPUT ihp130_TgateVinj02
+x2 SELECT[1] INPUT[1] VINJ GND OUTPUT ihp130_TgateVinj02
+x3 SELECT[2] INPUT[2] VINJ GND OUTPUT ihp130_TgateVinj02
+x4 SELECT[3] INPUT[3] VINJ GND OUTPUT ihp130_TgateVinj02
+.ends
+
+
+* expanding   symbol:  Resistor_String/ihp130_resistor_string.sym # of pins=3
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/Resistor_String/ihp130_resistor_string.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/Resistor_String/ihp130_resistor_string.sch
+.subckt ihp130_resistor_string VREFin Node[0] Node[1] Node[2] Node[3] VREFout
+*.PININFO VREFout:B VREFin:B Node[0:3]:O
+XR8 Node[0] VREFin rsil w=.59e-6 l=10e-6 m=1 b=0
+XR1 net1 Node[0] rsil w=.59e-6 l=10e-6 m=1 b=0
+XR2 Node[1] net1 rsil w=.59e-6 l=10e-6 m=1 b=0
+XR3 net2 Node[1] rsil w=.59e-6 l=10e-6 m=1 b=0
+XR4 Node[2] net2 rsil w=.59e-6 l=10e-6 m=1 b=0
+XR5 net3 Node[2] rsil w=.59e-6 l=10e-6 m=1 b=0
+XR6 Node[3] net3 rsil w=.59e-6 l=10e-6 m=1 b=0
+XR7 VREFout Node[3] rsil w=.59e-6 l=10e-6 m=1 b=0
+.ends
+
+
+* expanding   symbol:  VinjInv2/ihp130_VinjInv2.sym # of pins=4
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjInv2/ihp130_VinjInv2.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjInv2/ihp130_VinjInv2.sch
+.subckt ihp130_VinjInv2 VINJ Input Output GND
+*.PININFO VINJ:I GND:I Input:I Output:O
+M1 Output Input GND GND sg13_hv_nmos w=0.42u l=0.53u ng=1 m=1
+M2 Output Input VINJ VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  VinjNOR3/ihp130_VinjNOR3.sym # of pins=6
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjNOR3/ihp130_VinjNOR3.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjNOR3/ihp130_VinjNOR3.sch
+.subckt ihp130_VinjNOR3 VINJ Input[0] Input[1] Output Input[2] GND
+*.PININFO Input[0]:I VINJ:I GND:I Output:O Input[1]:I Input[2]:I
+M1 net1 Input[2] VINJ VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+M2 net2 Input[0] net1 VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+M3 Output Input[1] net2 VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+M4 Output Input[1] GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+M5 Output Input[2] GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+M6 Output Input[0] GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  TgateVinj02/ihp130_TgateVinj02.sym # of pins=5
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/TgateVinj02/ihp130_TgateVinj02.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/TgateVinj02/ihp130_TgateVinj02.sch
+.subckt ihp130_TgateVinj02 SELECT INPUT VINJ GND OUTPUT
+*.PININFO SELECT:I INPUT:I VINJ:I GND:I OUTPUT:O
+M1 Selb SELECT VINJ VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M2 Selb SELECT GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+M3 INPUT Selb OUTPUT VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M4 INPUT SELECT OUTPUT GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+.ends
+

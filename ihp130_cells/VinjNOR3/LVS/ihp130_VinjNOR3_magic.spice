@@ -1,0 +1,17 @@
+* NGSPICE file created from ihp130_VinjNOR3.ext - technology: ihp-sg13g2
+
+.subckt ihp130_VinjNOR3 Input[0] Input[1] Input[2] VINJ GND Output
+M0 a_n114_408# Input[0] a_n398_408# VINJ sg13_hv_pmos ad=0.1869p pd=1.31u as=0.1869p ps=1.31u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+M1 GND Input[1] Output GND sg13_hv_nmos ad=0.46973p pd=3.34667u as=0.2383p ps=2.33u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M2 a_n398_408# Input[2] VINJ VINJ sg13_hv_pmos ad=0.1869p pd=1.31u as=0.3549p ps=2.64u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+M3 GND Input[0] Output GND sg13_hv_nmos ad=0.46973p pd=3.34667u as=0.2383p ps=2.33u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M4 Output Input[1] a_n114_408# VINJ sg13_hv_pmos ad=0.2383p pd=2.33u as=0.1869p ps=1.31u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+M5 Output Input[2] GND GND sg13_hv_nmos ad=0.2383p pd=2.33u as=0.46973p ps=3.34667u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+.ends
+

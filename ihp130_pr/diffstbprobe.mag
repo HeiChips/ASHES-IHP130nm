@@ -1,0 +1,25 @@
+magic
+tech ihp-sg13g2
+timestamp 1772143227
+<< metal1 >>
+rect -50 1200 -30 1400
+rect -50 0 -30 200
+rect 30 1200 50 1400
+rect 30 0 50 200
+<< diffprobe >>
+rect -30 0 30 1400
+<< labels >>
+flabel comment s 40 1300 40 1300 0 FreeSans 100 90 0 0 OUT1
+flabel comment s -40 1300 -40 1300 0 FreeSans 100 90 0 0 IN1
+flabel comment s 40 100 40 100 0 FreeSans 100 90 0 0 OUT2
+flabel comment s -40 100 -40 100 0 FreeSans 100 90 0 0 IN2
+flabel comment s 0 1300 0 1300 0 FreeSans 50 90 0 0 diffstb_wire1
+flabel comment s 0 100 0 100 0 FreeSans 50 90 0 0 diffstb_wire2
+flabel comment s 0 700 0 700 0 FreeSans 100 90 0 0 diffstbprobe_M1
+flabel comment s -40 1300 -40 1300 0 FreeSans 100 90 0 0 IN1
+flabel comment s 40 1300 40 1300 0 FreeSans 100 90 0 0 OUT1
+flabel comment s -40 100 -40 100 0 FreeSans 100 90 0 0 IN2
+flabel comment s 40 100 40 100 0 FreeSans 100 90 0 0 OUT2
+<< properties >>
+string path 0.000 0.000 0.000 70.000 
+<< end >>

@@ -1,0 +1,72 @@
+
+Circuit 1 cell rsil and Circuit 2 cell rsil are black boxes.
+Warning: Equate pins:  cell rsil is a placeholder, treated as a black box.
+Warning: Equate pins:  cell rsil is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: rsil                            |Circuit 2: rsil                            
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rsil and rsil are equivalent.
+
+Class ihp130_Resistor_String (0):  Merged 3 series devices.
+Class ihp130_resistor_string (1):  Merged 3 series devices.
+Subcircuit summary:
+Circuit 1: ihp130_Resistor_String          |Circuit 2: ihp130_resistor_string          
+-------------------------------------------|-------------------------------------------
+rsil (8->5)                                |rsil (8->5)                                
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ihp130_Resistor_String          |Circuit 2: ihp130_resistor_string          
+-------------------------------------------|-------------------------------------------
+VREFin                                     |VREFin                                     
+VREFout                                    |VREFout                                    
+Node[1]                                    |Node[1]                                    
+Node[2]                                    |Node[2]                                    
+Node[0]                                    |Node[0]                                    
+Node[3]                                    |Node[3]                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ihp130_Resistor_String and ihp130_resistor_string are equivalent.
+Flattening unmatched subcell x4TgateVinj in circuit ihp130_DAC_cell (0)(1 instance)
+Flattening unmatched subcell 4TgateVinj in circuit ihp130_DAC_cell (1)(1 instance)
+Flattening unmatched subcell ihp130_TgateVinj02 in circuit ihp130_DAC_cell (1)(4 instances)
+
+Subcircuit summary:
+Circuit 1: ihp130_DAC_cell                 |Circuit 2: ihp130_DAC_cell                 
+-------------------------------------------|-------------------------------------------
+ihp130_Resistor_String (1)                 |ihp130_resistor_string (1)                 
+sg13_hv_pmos (8)                           |sg13_hv_pmos (8)                           
+sg13_hv_nmos (8)                           |sg13_hv_nmos (8)                           
+Number of devices: 17                      |Number of devices: 17                      
+Number of nets: 17                         |Number of nets: 17                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ihp130_DAC_cell                 |Circuit 2: ihp130_DAC_cell                 
+-------------------------------------------|-------------------------------------------
+OUTPUT                                     |OUTPUT                                     
+VINJ                                       |VINJ                                       
+GND                                        |GND                                        
+SELECT[3]                                  |SELECT[3]                                  
+SELECT[2]                                  |SELECT[2]                                  
+SELECT[1]                                  |SELECT[1]                                  
+SELECT[0]                                  |SELECT[0]                                  
+Vrefin                                     |VREFin                                     
+Vrefout                                    |VREFout                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ihp130_DAC_cell and ihp130_DAC_cell are equivalent.
+
+Final result: Circuits match uniquely.
+.

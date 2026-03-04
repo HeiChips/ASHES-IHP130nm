@@ -1,0 +1,33 @@
+magic
+tech ihp-sg13g2
+timestamp 1772143227
+<< error_p >>
+rect 7 0 23 30
+rect 85 0 101 30
+<< nwell >>
+rect -62 -62 170 92
+<< hvpmos >>
+rect 34 0 74 30
+<< hvpdiff >>
+rect 0 23 34 30
+rect 0 7 7 23
+rect 23 7 34 23
+rect 0 0 34 7
+rect 74 23 108 30
+rect 74 7 85 23
+rect 101 7 108 23
+rect 74 0 108 7
+<< hvpdiffc >>
+rect 7 7 23 23
+rect 85 7 101 23
+<< poly >>
+rect 34 30 74 48
+rect 34 -18 74 0
+<< metal1 >>
+rect 7 23 23 30
+rect 7 0 23 7
+rect 85 23 101 30
+rect 85 0 101 7
+<< labels >>
+flabel comment s 54 15 54 15 0 FreeSans 100 90 0 0 pmosHV
+<< end >>

@@ -1,0 +1,13 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/NonOvCLKGen/NonOvCLKGen.sch
+.subckt NonOvCLKGen VSS VDD CLK CLKB CLKA ENABLE
+*.PININFO CLK:I ENABLE:I CLKB:O CLKA:O VDD:I VSS:I
+x1 CLKA net4 ENABLE VDD VSS sg13g2_and2_2
+x3 CLKB net3 ENABLE VDD VSS sg13g2_and2_2
+x5 net1 net7 net4 VDD VSS sg13g2_nor2_2
+x6 net5 net3 CLK VDD VSS sg13g2_nor2_2
+x7 net7 CLK VDD VSS sg13g2_inv_2
+x8 net2 net1 VDD VSS sg13g2_inv_2
+x2 net6 net5 VDD VSS sg13g2_inv_2
+x4 net4 net6 VDD VSS sg13g2_inv_2
+x9 net3 net2 VDD VSS sg13g2_inv_2
+.ends

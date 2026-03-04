@@ -1,0 +1,13 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1772143227
+<< metal4 >>
+rect -70 -61 -61 61
+rect 61 -61 70 61
+<< via4 >>
+rect -61 -61 61 61
+<< metal5 >>
+rect -70 -61 -61 61
+rect 61 -61 70 61
+<< end >>

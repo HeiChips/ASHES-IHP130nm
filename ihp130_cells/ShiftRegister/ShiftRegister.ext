@@ -1,0 +1,392 @@
+timestamp 1772507446
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+use sg13g2_buf_1 sg13g2_buf_1_3 1 0 6688 0 1 2
+use sg13g2_buf_1 sg13g2_buf_1_2 1 0 6304 0 1 2
+use sg13g2_dfrbp_1 sg13g2_dfrbp_1_1 1 0 3520 0 1 2
+use sg13g2_buf_1 sg13g2_buf_1_1 1 0 3136 0 1 2
+use sg13g2_buf_1 sg13g2_buf_1_0 1 0 2752 0 1 2
+use sg13g2_dfrbp_1 sg13g2_dfrbp_1_0 1 0 -32 0 1 2
+port "VSS" 8 -32 -42 7072 46 m1
+port "QOUT" 6 7080 292 7120 358 m3
+port "CLK" 1 -80 516 -40 582 m3
+port "RESET_B" 3 -80 116 -40 182 m3
+port "DIN" 2 -80 292 -40 358 m3
+port "Vg[1]" 5 6268 -54 6332 -14 m2
+port "Vg[0]" 4 2724 -54 2788 -14 m2
+port "VDD" 7 -32 714 7072 802 m1
+node "VSS" 9 2972.92 -32 -42 m1 0 0 0 0 625152 14384 0 0 0 0 0 0 0 0 0 0 0 0
+node "QOUT" 1 130.488 7080 292 m3 0 0 0 0 4224 260 9344 420 9900 432 0 0 0 0 0 0 0 0
+node "m1_3456_216#" 0 119.938 3456 216 m1 0 0 0 0 30176 696 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLK" 12 1729.87 -80 516 m3 0 0 0 0 4048 360 34776 1356 447984 14532 0 0 0 0 0 0 0 0
+node "RESET_B" 11 1713.34 -80 116 m3 0 0 0 0 4248 368 37352 1396 475200 14532 0 0 0 0 0 0 0 0
+node "DIN" 1 118.167 -80 292 m3 0 0 0 0 2116 184 11620 472 11088 468 0 0 0 0 0 0 0 0
+node "m1_6622_388#" 0 70.5199 6622 388 m1 0 0 0 0 13332 536 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vg[1]" 1 237.955 6268 -54 m2 0 0 0 0 13728 548 32512 1144 0 0 0 0 0 0 0 0 0 0
+node "m1_3072_388#" 0 70.039 3072 388 m1 0 0 0 0 13200 532 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vg[0]" 1 231.074 2724 -54 m2 0 0 0 0 13728 548 32512 1144 0 0 0 0 0 0 0 0 0 0
+node "VDD" 9 2971.03 -32 714 m1 0 0 0 0 625152 14384 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_3072_388#" "VSS" 17.3102
+cap "m1_3072_388#" "CLK" 4.89378
+cap "m1_3072_388#" "Vg[0]" 12.8178
+cap "RESET_B" "m1_3072_388#" 4.14309
+cap "VDD" "m1_3072_388#" 22.988
+cap "m1_6622_388#" "VSS" 17.4833
+cap "m1_6622_388#" "QOUT" 1.42694
+cap "QOUT" "VSS" 9.93259
+cap "m1_6622_388#" "CLK" 4.90865
+cap "VSS" "CLK" 32.6552
+cap "m1_6622_388#" "Vg[1]" 12.9032
+cap "QOUT" "CLK" 39.9262
+cap "Vg[1]" "VSS" 74.8806
+cap "Vg[1]" "QOUT" 9.9366
+cap "Vg[1]" "CLK" 17.9482
+cap "Vg[0]" "VSS" 76.347
+cap "DIN" "VSS" 9.48811
+cap "m1_3456_216#" "VSS" 33.0452
+cap "RESET_B" "m1_6622_388#" 4.08544
+cap "RESET_B" "VSS" 236.486
+cap "RESET_B" "QOUT" 59.5998
+cap "Vg[0]" "CLK" 17.9365
+cap "VDD" "m1_6622_388#" 23.2179
+cap "DIN" "CLK" 45.1618
+cap "m1_3456_216#" "CLK" 8.32118
+cap "VDD" "VSS" 253.899
+cap "VDD" "QOUT" 6.74931
+cap "RESET_B" "CLK" 823.248
+cap "RESET_B" "Vg[1]" 51.6023
+cap "VDD" "CLK" 212.476
+cap "Vg[0]" "m1_3456_216#" 1.49845
+cap "VDD" "Vg[1]" 25.0755
+cap "RESET_B" "Vg[0]" 61.7298
+cap "RESET_B" "DIN" 90.4191
+cap "RESET_B" "m1_3456_216#" 15.9389
+cap "VDD" "Vg[0]" 25.0755
+cap "VDD" "DIN" 5.2884
+cap "VDD" "m1_3456_216#" 16.3186
+cap "VDD" "RESET_B" 28.8792
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_1201_410#" 6.01328
+cap "sg13g2_dfrbp_1_0/a_1583_191#" "sg13g2_dfrbp_1_0/RESET_B" 0.586542
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_741_93#" 29.2814
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_dfrbp_1_0/a_1201_135#" 4.58637
+cap "sg13g2_dfrbp_1_0/a_681_505#" "sg13g2_dfrbp_1_0/RESET_B" 0.0360924
+cap "sg13g2_dfrbp_1_0/a_612_127#" "sg13g2_dfrbp_1_0/D" 0.345285
+cap "sg13g2_dfrbp_1_0/a_298_337#" "sg13g2_buf_1_0/VDD" 1.42109e-14
+cap "sg13g2_dfrbp_1_0/a_298_337#" "sg13g2_dfrbp_1_0/D" 2.31234
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_612_127#" 3.69886
+cap "sg13g2_dfrbp_1_0/a_38_114#" "sg13g2_dfrbp_1_0/D" 10.3349
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_298_337#" 21.0122
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_buf_1_0/VSS" 6.16561
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_38_114#" 35.961
+cap "sg13g2_dfrbp_1_0/a_550_127#" "sg13g2_dfrbp_1_0/RESET_B" 0.498827
+cap "sg13g2_dfrbp_1_0/a_843_236#" "sg13g2_dfrbp_1_0/RESET_B" 13.9317
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_1201_135#" 0.826876
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_681_505#" 1.10945
+cap "sg13g2_buf_1_0/VSS" "sg13g2_buf_1_0/VDD" -53.7144
+cap "sg13g2_dfrbp_1_0/D" "sg13g2_buf_1_0/VSS" -6.36771
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_dfrbp_1_0/a_324_432#" 70.1035
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_buf_1_0/VSS" -6.6756
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_dfrbp_1_0/a_132_114#" 0.390164
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_buf_1_0/VDD" -1.3613
+cap "sg13g2_dfrbp_1_0/a_843_236#" "sg13g2_dfrbp_1_0/D" 0.381815
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_dfrbp_1_0/a_2002_114#" 0.0660138
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_dfrbp_1_0/a_1489_191#" 0.480714
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_550_127#" 0.0406814
+cap "sg13g2_dfrbp_1_0/a_843_236#" "sg13g2_dfrbp_1_0/CLK" 37.3319
+cap "sg13g2_dfrbp_1_0/D" "sg13g2_dfrbp_1_0/RESET_B" 3.70006
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/RESET_B" 14.5534
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_dfrbp_1_0/a_741_93#" 13.9902
+cap "sg13g2_dfrbp_1_0/D" "sg13g2_dfrbp_1_0/a_324_432#" 6.78199
+cap "sg13g2_dfrbp_1_0/a_1201_410#" "sg13g2_dfrbp_1_0/RESET_B" 0.714214
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_dfrbp_1_0/a_1840_334#" 0.203308
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_324_432#" 15.3091
+cap "sg13g2_dfrbp_1_0/D" "sg13g2_buf_1_0/VDD" 7.3959
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_buf_1_0/VDD" 37.9791
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_132_114#" 0.053327
+cap "sg13g2_dfrbp_1_0/a_612_127#" "sg13g2_dfrbp_1_0/RESET_B" 18.4765
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/D" 1.35981
+cap "sg13g2_dfrbp_1_0/a_298_337#" "sg13g2_dfrbp_1_0/RESET_B" 16.9925
+cap "sg13g2_dfrbp_1_0/a_38_114#" "sg13g2_dfrbp_1_0/RESET_B" 25.6255
+cap "sg13g2_dfrbp_1_0/a_741_93#" "sg13g2_buf_1_0/VDD" 1.42109e-14
+cap "sg13g2_dfrbp_1_0/D" "sg13g2_dfrbp_1_0/a_741_93#" 0.37064
+cap "sg13g2_buf_1_0/a_40_152#" "sg13g2_buf_1_0/A" 42.0575
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_0/Q_N" 2.84217e-14
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_buf_1_0/A" 6.90278
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/CLK" 14.5463
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_1785_429#" 0.836263
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_2002_114#" 0.917303
+cap "sg13g2_buf_1_0/A" "sg13g2_dfrbp_1_0/a_2420_412#" 5.80576
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_0/CLK" 57.1114
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_741_93#" 5.86538
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/Q_N" 10.4198
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_buf_1_0/A" 10.1683
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_1900_429#" 0.691699
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_buf_1_0/A" 5.01761
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_1489_191#" 11.8495
+cap "sg13g2_buf_1_0/a_40_152#" "sg13g2_dfrbp_1_0/a_2420_412#" 0.812937
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_1785_429#" 1.8606
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_2002_114#" 0.0767908
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_dfrbp_1_0/a_2420_412#" 0.125652
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_0/a_1489_191#" -6.93889e-18
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_324_432#" 18.4693
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_843_236#" 3.42854
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_741_93#" 21.4638
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_1840_334#" 12.5239
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/VSS" 8.62054
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_buf_1_0/A" 11.4947
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_buf_1_1/a_40_152#" 0.0925013
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_2420_412#" 12.4057
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_buf_1_0/a_40_152#" 0.307607
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_1900_429#" 3.48306
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_0/a_1840_334#" -2.84217e-14
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/a_1583_191#" 17.3928
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_1/VSS" -61.91
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_1489_191#" 1.76433
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_0/a_2420_412#" 1.12997
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_0/a_1583_191#" -5.68434e-14
+cap "sg13g2_buf_1_1/A" "sg13g2_dfrbp_1_0/CLK" 0.0564777
+cap "sg13g2_dfrbp_1_0/a_324_432#" "sg13g2_dfrbp_1_0/CLK" 13.6666
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_843_236#" 25.5303
+cap "sg13g2_buf_1_0/a_40_152#" "sg13g2_dfrbp_1_0/CLK" 0.35007
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_1/a_324_432#" 0.0267079
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_1/RESET_B" 5.99487
+cap "sg13g2_dfrbp_1_0/a_1840_334#" "sg13g2_dfrbp_1_0/CLK" 13.1231
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_dfrbp_1_0/CLK" -4.75653
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_1/D" 0.033589
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_1/a_298_337#" 0.0110932
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_1/a_38_114#" 0.0281372
+cap "sg13g2_dfrbp_1_0/CLK" "sg13g2_dfrbp_1_0/a_2420_412#" 14.0936
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/Q_N" 9.07134
+cap "sg13g2_dfrbp_1_0/a_1583_191#" "sg13g2_dfrbp_1_0/CLK" 21.3897
+cap "sg13g2_dfrbp_1_0/a_324_432#" "sg13g2_buf_1_0/A" 0.826522
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_132_114#" 0.388767
+cap "sg13g2_dfrbp_1_0/a_1583_191#" "sg13g2_buf_1_0/A" 5.50538
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_0/a_40_152#" 14.2209
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1201_135#" 0.940298
+cap "sg13g2_dfrbp_1_0/a_1201_135#" "sg13g2_buf_1_0/A" 0.350816
+cap "sg13g2_dfrbp_1_1/a_324_432#" "sg13g2_buf_1_0/A" 0.641589
+cap "sg13g2_buf_1_0/a_40_152#" "sg13g2_buf_1_1/A" 10.1022
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/VSS" 25.2405
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_dfrbp_1_0/a_2420_412#" 0.16375
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_1/A" 10.7913
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_38_114#" 20.8766
+cap "sg13g2_buf_1_0/A" "sg13g2_dfrbp_1_1/a_298_337#" 0.544781
+cap "sg13g2_buf_1_1/a_40_152#" "sg13g2_buf_1_0/a_40_152#" 1.49799
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_dfrbp_1_1/VDD" -58.9776
+cap "sg13g2_dfrbp_1_0/a_2002_114#" "sg13g2_buf_1_0/A" 0.212049
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/D" 10.5447
+cap "sg13g2_buf_1_1/a_40_152#" "sg13g2_dfrbp_1_1/CLK" 14.1637
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_550_127#" 0.498827
+cap "sg13g2_dfrbp_1_1/a_38_114#" "sg13g2_dfrbp_1_1/VDD" -0.950865
+cap "sg13g2_buf_1_1/a_40_152#" "sg13g2_buf_1_1/A" 104.235
+cap "sg13g2_buf_1_0/A" "sg13g2_dfrbp_1_1/a_132_114#" 0.0495399
+cap "sg13g2_buf_1_1/a_40_152#" "sg13g2_dfrbp_1_1/D" 14.1851
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_buf_1_0/A" 15.4902
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_buf_1_0/a_40_152#" 10.1477
+cap "sg13g2_dfrbp_1_1/a_38_114#" "sg13g2_buf_1_0/A" 0.696226
+cap "sg13g2_buf_1_0/a_40_152#" "sg13g2_dfrbp_1_0/a_2420_412#" 0.591979
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/CLK" 4.28178
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_2002_114#" 0.0660138
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_buf_1_0/a_40_152#" 2.49092
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_buf_1_1/A" 11.2747
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_1/CLK" 46.2219
+cap "sg13g2_dfrbp_1_0/a_1489_191#" "sg13g2_buf_1_0/A" 0.50668
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_buf_1_1/a_40_152#" 11.0228
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/D" 7.5142
+cap "sg13g2_dfrbp_1_1/a_843_236#" "sg13g2_dfrbp_1_1/RESET_B" 2.58711
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_buf_1_1/A" 9.32728
+cap "sg13g2_dfrbp_1_1/a_324_432#" "sg13g2_dfrbp_1_1/CLK" 11.3212
+cap "sg13g2_buf_1_0/A" "sg13g2_dfrbp_1_0/a_1785_429#" 0.079604
+cap "sg13g2_buf_1_1/a_40_152#" "sg13g2_dfrbp_1_1/VDD" 3.21487
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_1/D" 70.0333
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_298_337#" 9.89969
+cap "sg13g2_dfrbp_1_0/a_843_236#" "sg13g2_buf_1_0/A" 0.0495595
+cap "sg13g2_buf_1_0/a_40_152#" "sg13g2_buf_1_0/A" 75.0004
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_741_93#" 3.12697
+cap "sg13g2_dfrbp_1_0/a_1900_429#" "sg13g2_buf_1_0/A" 0.0590627
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_0/A" 1.13054
+cap "sg13g2_buf_1_1/A" "sg13g2_buf_1_0/A" -4.82186
+cap "sg13g2_buf_1_1/a_40_152#" "sg13g2_dfrbp_1_1/a_298_337#" 0.769763
+cap "sg13g2_dfrbp_1_1/D" "sg13g2_dfrbp_1_1/a_298_337#" 0.0133464
+cap "sg13g2_dfrbp_1_0/a_1840_334#" "sg13g2_buf_1_0/A" 1.99203
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_132_114#" 0.0529929
+cap "sg13g2_buf_1_1/a_40_152#" "sg13g2_buf_1_0/A" 2.81121
+cap "sg13g2_buf_1_0/A" "sg13g2_dfrbp_1_1/D" 1.2721
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_buf_1_0/a_40_152#" 0.252667
+cap "sg13g2_dfrbp_1_0/a_741_93#" "sg13g2_buf_1_0/A" 0.674411
+cap "sg13g2_dfrbp_1_1/a_843_236#" "sg13g2_buf_1_0/A" 0.0199352
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/VDD" 7.02249
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_dfrbp_1_1/CLK" 0.201569
+cap "sg13g2_dfrbp_1_0/RESET_B" "sg13g2_buf_1_0/A" 0.509634
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_0/a_2420_412#" 0.146604
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_612_127#" 6.6312
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_324_432#" 53.8843
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_buf_1_1/A" 4.86879
+cap "sg13g2_dfrbp_1_1/a_38_114#" "sg13g2_dfrbp_1_1/CLK" 14.9218
+cap "sg13g2_dfrbp_1_1/a_132_114#" "sg13g2_dfrbp_1_1/D" 0.306181
+cap "sg13g2_dfrbp_1_1/a_741_93#" "sg13g2_buf_1_0/A" 0.0160032
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1583_191#" 0.585529
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_298_337#" 13.2992
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_buf_1_1/a_40_152#" 0.0593161
+cap "sg13g2_dfrbp_1_1/VSS" "sg13g2_dfrbp_1_1/D" -13.0592
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1840_334#" 0.202052
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_550_127#" 0.0404299
+cap "sg13g2_buf_1_1/a_40_152#" "sg13g2_dfrbp_1_1/a_38_114#" 0.108216
+cap "sg13g2_dfrbp_1_1/a_38_114#" "sg13g2_dfrbp_1_1/D" 40.4857
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_buf_1_0/A" 2.11537
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1489_191#" 0.480714
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_1/a_298_337#" 0.325743
+cap "sg13g2_dfrbp_1_0/a_2420_412#" "sg13g2_buf_1_0/A" 13.7914
+cap "sg13g2_dfrbp_1_0/Q_N" "sg13g2_buf_1_0/A" 2.53504
+cap "sg13g2_dfrbp_1_1/VDD" "sg13g2_buf_1_0/A" 21.6791
+cap "sg13g2_dfrbp_1_0/a_843_236#" "sg13g2_buf_1_0/A" 0.325208
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_298_337#" 10.5402
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_38_114#" 19.9686
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_1900_429#" 3.41941
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/D" -0.00732362
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_1201_135#" 0.822419
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_298_337#" 3.90438
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_38_114#" 5.17181
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1900_429#" 0.725399
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_741_93#" 49.8585
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1201_135#" 3.64607
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_741_93#" 16.8793
+cap "sg13g2_dfrbp_1_1/a_843_236#" "sg13g2_dfrbp_1_1/CLK" 60.896
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_1785_429#" 1.85556
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_2/a_40_152#" 0.140249
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_843_236#" 14.94
+cap "sg13g2_buf_1_3/VSS" "sg13g2_dfrbp_1_1/CLK" -9.54614
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1785_429#" 0.836263
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_buf_1_3/VSS" -5.17494
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_2/A" 0.36195
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/CLK" 23.2154
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_1840_334#" 6.61591
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_1/a_40_152#" 0.180786
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/Q_N" 0.583991
+cap "sg13g2_buf_1_3/VDD" "sg13g2_buf_1_3/VSS" -59.2168
+cap "sg13g2_dfrbp_1_1/a_1489_191#" "sg13g2_dfrbp_1_1/CLK" 1.74178
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_1583_191#" 12.7615
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1840_334#" 3.51737
+cap "sg13g2_dfrbp_1_1/a_1489_191#" "sg13g2_dfrbp_1_1/RESET_B" 11.8495
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1583_191#" 8.47
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_1/A" 0.0424793
+cap "sg13g2_dfrbp_1_1/a_2420_412#" "sg13g2_dfrbp_1_1/CLK" 0.66803
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_681_505#" 1.06771
+cap "sg13g2_buf_1_3/VDD" "sg13g2_dfrbp_1_1/CLK" 38.099
+cap "sg13g2_dfrbp_1_1/a_612_127#" "sg13g2_dfrbp_1_1/CLK" 3.62804
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_324_432#" 16.9414
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_1201_410#" 5.87398
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_681_505#" 0.0599638
+cap "sg13g2_buf_1_3/VDD" "sg13g2_dfrbp_1_1/RESET_B" 1.54268
+cap "sg13g2_dfrbp_1_1/a_612_127#" "sg13g2_dfrbp_1_1/RESET_B" 11.8453
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_324_432#" 33.694
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_1201_410#" 0.793552
+cap "sg13g2_buf_1_2/a_40_152#" "sg13g2_buf_1_2/A" 116.394
+cap "sg13g2_buf_1_2/A" "sg13g2_buf_1_3/a_40_152#" 2.74197
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_3/A" 10.7573
+cap "sg13g2_dfrbp_1_1/a_2420_412#" "sg13g2_buf_1_3/VDD" 1.27657
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_3/VSS" 0.447377
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/a_1583_191#" 5.60849
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/Q_N" 2.61223
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/a_2002_114#" 0.215497
+cap "sg13g2_buf_1_2/a_40_152#" "sg13g2_buf_1_3/a_40_152#" 1.49799
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_2/A" 12.0951
+cap "sg13g2_buf_1_3/VDD" "sg13g2_dfrbp_1_1/RESET_B" 8.71997
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/a_1489_191#" 0.514052
+cap "sg13g2_dfrbp_1_1/a_2420_412#" "sg13g2_buf_1_3/VSS" 0.289402
+cap "sg13g2_buf_1_2/a_40_152#" "sg13g2_dfrbp_1_1/CLK" 14.2209
+cap "sg13g2_dfrbp_1_1/a_1840_334#" "sg13g2_buf_1_2/A" 2.03508
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_3/a_40_152#" 12.9759
+cap "sg13g2_dfrbp_1_1/a_2420_412#" "sg13g2_buf_1_2/A" 19.977
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_1583_191#" 8.18754
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_buf_1_3/A" 10.3785
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/Q_N" 9.54437
+cap "sg13g2_buf_1_3/VSS" "sg13g2_dfrbp_1_1/RESET_B" 19.7508
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_2002_114#" 0.0763097
+cap "sg13g2_buf_1_2/a_40_152#" "sg13g2_dfrbp_1_1/a_2420_412#" 1.40492
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/a_1201_135#" 0.354305
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/RESET_B" 11.7475
+cap "sg13g2_buf_1_3/VDD" "sg13g2_buf_1_3/A" 9.0974
+cap "sg13g2_buf_1_3/VSS" "sg13g2_buf_1_3/VDD" -60.9806
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/a_1900_429#" 0.059972
+cap "sg13g2_buf_1_2/a_40_152#" "sg13g2_dfrbp_1_1/RESET_B" 9.51918
+cap "sg13g2_dfrbp_1_1/a_1840_334#" "sg13g2_dfrbp_1_1/CLK" 6.12219
+cap "sg13g2_buf_1_3/a_40_152#" "sg13g2_dfrbp_1_1/RESET_B" 8.38661
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/a_2420_412#" 13.0548
+cap "sg13g2_dfrbp_1_1/a_1583_191#" "sg13g2_dfrbp_1_1/RESET_B" 9.00042
+cap "sg13g2_buf_1_2/A" "sg13g2_buf_1_3/VDD" 25.8386
+cap "sg13g2_dfrbp_1_1/Q_N" "sg13g2_dfrbp_1_1/RESET_B" 9.14177
+cap "sg13g2_buf_1_3/VSS" "sg13g2_buf_1_3/A" 4.69568
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/a_1785_429#" 0.0807392
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_1/RESET_B" 1.22285
+cap "sg13g2_buf_1_2/a_40_152#" "sg13g2_buf_1_3/VDD" 2.79853
+cap "sg13g2_buf_1_3/X" "sg13g2_buf_1_3/A" -0.317661
+cap "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_1/a_2002_114#" 0.917303
+cap "sg13g2_buf_1_3/VDD" "sg13g2_buf_1_3/a_40_152#" 0.00121052
+cap "sg13g2_buf_1_2/A" "sg13g2_buf_1_3/A" -5.20919
+cap "sg13g2_buf_1_2/A" "sg13g2_buf_1_3/VSS" 21.6113
+cap "sg13g2_buf_1_2/A" "sg13g2_buf_1_3/X" 0.943779
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/a_843_236#" 0.397964
+cap "sg13g2_dfrbp_1_1/a_324_432#" "sg13g2_buf_1_2/A" 0.839692
+cap "sg13g2_buf_1_2/A" "sg13g2_dfrbp_1_1/a_741_93#" 0.683126
+cap "sg13g2_dfrbp_1_1/CLK" "sg13g2_buf_1_3/VDD" 56.0333
+cap "sg13g2_dfrbp_1_1/a_2420_412#" "sg13g2_dfrbp_1_1/RESET_B" 12.489
+cap "sg13g2_dfrbp_1_1/a_1840_334#" "sg13g2_dfrbp_1_1/RESET_B" 9.02583
+cap "sg13g2_buf_1_2/a_40_152#" "sg13g2_buf_1_3/A" 10.1022
+cap "sg13g2_buf_1_2/a_40_152#" "sg13g2_buf_1_3/VSS" 0.252667
+cap "sg13g2_buf_1_3/a_40_152#" "sg13g2_buf_1_3/A" 104.235
+cap "sg13g2_buf_1_3/VSS" "sg13g2_buf_1_3/a_40_152#" -0.0438338
+cap "sg13g2_buf_1_3/X" "sg13g2_dfrbp_1_1/Q_N" 0.12891
+cap "CLK" "sg13g2_buf_1_3/VDD" 7.6197
+cap "sg13g2_buf_1_3/X" "sg13g2_buf_1_3/a_40_152#" 11.0055
+cap "sg13g2_buf_1_3/a_40_152#" "sg13g2_buf_1_3/VDD" 3.55271e-15
+cap "sg13g2_buf_1_3/X" "sg13g2_buf_1_2/A" 0.458041
+cap "sg13g2_buf_1_3/a_40_152#" "CLK" 1.18782
+cap "sg13g2_buf_1_3/X" "sg13g2_dfrbp_1_1/a_2420_412#" 0.572325
+cap "sg13g2_buf_1_3/X" "sg13g2_dfrbp_1_1/a_1583_191#" 0.518432
+cap "sg13g2_buf_1_3/X" "sg13g2_dfrbp_1_1/RESET_B" 0.0382069
+cap "sg13g2_buf_1_3/VSS" "RESET_B" -0.461874
+cap "sg13g2_buf_1_3/X" "sg13g2_dfrbp_1_1/a_1840_334#" 0.10271
+cap "sg13g2_buf_1_3/X" "RESET_B" 6.0391
+cap "sg13g2_buf_1_3/X" "sg13g2_buf_1_3/VSS" -4.85946
+cap "sg13g2_buf_1_3/X" "sg13g2_buf_1_2/a_40_152#" 1.92516
+cap "sg13g2_buf_1_3/VDD" "RESET_B" 0.135893
+cap "sg13g2_buf_1_3/VSS" "sg13g2_buf_1_3/VDD" -6.11484
+cap "CLK" "sg13g2_buf_1_3/VSS" -0.113294
+cap "sg13g2_buf_1_3/a_40_152#" "RESET_B" 1.13257
+cap "sg13g2_buf_1_3/X" "sg13g2_buf_1_3/A" 2.12778
+cap "sg13g2_buf_1_3/X" "sg13g2_buf_1_3/VDD" 8.61849
+cap "sg13g2_buf_1_3/X" "CLK" 7.70373
+merge "sg13g2_buf_1_2/VSS" "sg13g2_buf_1_3/VSS" -3251.89 0 0 0 0 -625152 -15264 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sg13g2_buf_1_3/VSS" "sg13g2_buf_1_1/VSS"
+merge "sg13g2_buf_1_1/VSS" "sg13g2_dfrbp_1_1/VSS"
+merge "sg13g2_dfrbp_1_1/VSS" "sg13g2_dfrbp_1_0/VSS"
+merge "sg13g2_dfrbp_1_0/VSS" "sg13g2_buf_1_0/VSS"
+merge "sg13g2_buf_1_0/VSS" "VSUB"
+merge "VSUB" "VSS"
+merge "sg13g2_buf_1_2/VDD" "sg13g2_buf_1_3/VDD" -3269.73 0 0 0 0 -625152 -15264 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sg13g2_buf_1_3/VDD" "sg13g2_buf_1_1/VDD"
+merge "sg13g2_buf_1_1/VDD" "sg13g2_dfrbp_1_1/VDD"
+merge "sg13g2_dfrbp_1_1/VDD" "sg13g2_dfrbp_1_0/VDD"
+merge "sg13g2_dfrbp_1_0/VDD" "sg13g2_buf_1_0/VDD"
+merge "sg13g2_buf_1_0/VDD" "VDD"
+merge "sg13g2_dfrbp_1_1/CLK" "sg13g2_dfrbp_1_0/CLK" -714.222 0 0 0 0 -4048 -360 0 0 -12000 -460 0 0 0 0 0 0 0 0
+merge "sg13g2_dfrbp_1_0/CLK" "CLK"
+merge "sg13g2_buf_1_1/X" "sg13g2_dfrbp_1_1/D" -239.405 0 0 0 0 -11316 -794 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sg13g2_dfrbp_1_1/D" "m1_3456_216#"
+merge "sg13g2_buf_1_2/X" "sg13g2_buf_1_3/A" -169.564 0 0 0 0 -5346 -426 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sg13g2_buf_1_3/A" "m1_6622_388#"
+merge "sg13g2_dfrbp_1_0/D" "DIN" -52.1491 0 0 0 0 -2116 -184 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sg13g2_buf_1_0/X" "sg13g2_buf_1_1/A" -169.083 0 0 0 0 -5214 -422 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sg13g2_buf_1_1/A" "m1_3072_388#"
+merge "sg13g2_dfrbp_1_1/RESET_B" "sg13g2_dfrbp_1_0/RESET_B" -512.292 0 0 0 0 -4248 -368 0 0 -13200 -466 0 0 0 0 0 0 0 0
+merge "sg13g2_dfrbp_1_0/RESET_B" "RESET_B"
+merge "sg13g2_dfrbp_1_1/Q" "sg13g2_buf_1_2/A" -235.282 0 0 0 0 -5214 -422 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sg13g2_buf_1_2/A" "Vg[1]"
+merge "sg13g2_dfrbp_1_0/Q" "sg13g2_buf_1_0/A" -242.195 0 0 0 0 -5214 -422 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sg13g2_buf_1_0/A" "Vg[0]"
+merge "sg13g2_buf_1_3/X" "QOUT" -66.1265 0 0 0 0 -2508 -208 0 0 0 0 0 0 0 0 0 0 0 0

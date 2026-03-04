@@ -1,0 +1,20 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/4TgateVinj/4TgateVinj.sch
+.subckt 4TgateVinj SELECT[0] SELECT[1] SELECT[2] SELECT[3] INPUT[0] INPUT[1] INPUT[2] INPUT[3] VINJ GND OUTPUT
+*.PININFO SELECT[0:3]:I INPUT[0:3]:I VINJ:I GND:I OUTPUT:O
+x1 SELECT[0] INPUT[0] VINJ GND OUTPUT ihp130_TgateVinj02
+x2 SELECT[1] INPUT[1] VINJ GND OUTPUT ihp130_TgateVinj02
+x3 SELECT[2] INPUT[2] VINJ GND OUTPUT ihp130_TgateVinj02
+x4 SELECT[3] INPUT[3] VINJ GND OUTPUT ihp130_TgateVinj02
+.ends
+
+* expanding   symbol:  TgateVinj02/ihp130_TgateVinj02.sym # of pins=5
+** sym_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/TgateVinj02/ihp130_TgateVinj02.sym
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/TgateVinj02/ihp130_TgateVinj02.sch
+.subckt ihp130_TgateVinj02 SELECT INPUT VINJ GND OUTPUT
+*.PININFO SELECT:I INPUT:I VINJ:I GND:I OUTPUT:O
+M1 Selb SELECT VINJ VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M2 Selb SELECT GND GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+M3 INPUT Selb OUTPUT VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M4 INPUT SELECT OUTPUT GND sg13_hv_nmos w=0.42u l=0.5u ng=1 m=1
+.ends
+

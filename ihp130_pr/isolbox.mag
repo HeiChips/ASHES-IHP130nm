@@ -1,0 +1,20 @@
+magic
+tech ihp-sg13g2
+magscale 1 2
+timestamp 1772143227
+<< dnwell >>
+rect -130 -130 310 310
+<< nwell >>
+rect -210 180 390 390
+rect -210 0 0 180
+rect 180 0 390 180
+rect -210 -210 390 0
+<< nsubdiff >>
+rect -162 228 342 342
+rect -162 -48 -48 228
+rect 228 -48 342 228
+rect -162 -162 342 -48
+<< labels >>
+flabel comment s 0 -105 0 -105 0 FreeSans 524 0 0 0 isolbox
+flabel comment s -105 90 -105 90 0 FreeSans 570 0 0 0 I
+<< end >>

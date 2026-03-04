@@ -1,0 +1,63 @@
+* NGSPICE file created from NonOvCLKGen.ext - technology: ihp-sg13g2
+
+.subckt sg13g2_nor2_2 A VDD Y VSS B
+M0 Y B a_52_412# VDD sg13_lv_pmos ad=0.20052p pd=2.17323u as=0.241p ps=2.18u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+M1 a_52_412# B Y VDD sg13_lv_pmos ad=0.241p pd=2.18u as=0.20052p ps=2.17323u w=1.12u l=0.13u
+**devattr s=8512,300 d=15232,584
+M2 Y A VSS VSS sg13_lv_nmos ad=0.13249p pd=1.43588u as=0.46532p ps=2.8025u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+M3 VDD A a_52_412# VDD sg13_lv_pmos ad=0.7636p pd=4.32u as=0.241p ps=2.18u w=1.12u l=0.13u
+**devattr s=16128,592 d=8512,300
+M4 VSS A Y VSS sg13_lv_nmos ad=0.46532p pd=2.8025u as=0.13249p ps=1.43588u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+M5 a_52_412# A VDD VDD sg13_lv_pmos ad=0.241p pd=2.18u as=0.7636p ps=4.32u w=1.12u l=0.13u
+**devattr s=8512,300 d=8512,300
+M6 Y B VSS VSS sg13_lv_nmos ad=0.13249p pd=1.43588u as=0.46532p ps=2.8025u w=0.74u l=0.13u
+**devattr s=5624,224 d=5624,224
+M7 VSS B Y VSS sg13_lv_nmos ad=0.46532p pd=2.8025u as=0.13249p ps=1.43588u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+.ends
+
+.subckt sg13g2_and2_2 X VSS VDD B A
+M0 X a_45_160# VDD VDD sg13_lv_pmos ad=0.20314p pd=1.75527u as=0.61017p ps=3.80571u w=1.12u l=0.13u
+**devattr s=7672,300 d=8512,300
+M1 VDD a_45_160# X VDD sg13_lv_pmos ad=0.61017p pd=3.80571u as=0.20314p ps=1.75527u w=1.12u l=0.13u
+**devattr s=8512,300 d=17024,600
+M2 X a_45_160# VSS VSS sg13_lv_nmos ad=0.13421p pd=1.15973u as=0.6261p ps=3.73142u w=0.74u l=0.13u
+**devattr s=5324,224 d=5624,224
+M3 VSS a_45_160# X VSS sg13_lv_nmos ad=0.6261p pd=3.73142u as=0.13421p ps=1.15973u w=0.74u l=0.13u
+**devattr s=5624,224 d=11248,448
+M4 a_45_160# A VDD VDD sg13_lv_pmos ad=0.31205p pd=2.89293u as=0.45763p ps=2.85429u w=0.84u l=0.13u
+**devattr s=11424,472 d=6384,244
+M5 VDD B a_45_160# VDD sg13_lv_pmos ad=0.45763p pd=2.85429u as=0.31205p ps=2.89293u w=0.84u l=0.13u
+**devattr s=6384,244 d=7672,300
+M6 a_139_160# A a_45_160# VSS sg13_lv_nmos ad=0 pd=0 as=0.23775p ps=2.20414u w=0.64u l=0.13u
+**devattr s=8704,392 d=4864,204
+M7 VSS B a_139_160# VSS sg13_lv_nmos ad=0.54149p pd=3.22717u as=0 ps=0 w=0.64u l=0.13u
+**devattr s=4864,204 d=5324,224
+.ends
+
+.subckt sg13g2_inv_2 VSS VDD Y A
+M0 Y A VSS VSS sg13_lv_nmos ad=0.15297p pd=1.3686u as=0.6798p ps=4.34u w=0.74u l=0.13u
+**devattr s=10064,432 d=5624,224
+M1 Y A VDD VDD sg13_lv_pmos ad=0.23153p pd=2.0714u as=0.7708p ps=5.04u w=1.12u l=0.13u
+**devattr s=15232,584 d=8512,300
+M2 VSS A Y VSS sg13_lv_nmos ad=0.6798p pd=4.34u as=0.15297p ps=1.3686u w=0.74u l=0.13u
+**devattr s=5624,224 d=10064,432
+M3 VDD A Y VDD sg13_lv_pmos ad=0.7708p pd=5.04u as=0.23153p ps=2.0714u w=1.12u l=0.13u
+**devattr s=8512,300 d=15456,586
+.ends
+
+.subckt NonOvCLKGen CLK ENABLE CLKA CLKB VSS VDD
+x1  sg13g2_inv_2_0/Y VDD sg13g2_inv_2_1/A VSS sg13g2_inv_2_4/Y sg13g2_nor2_2
+x2 CLKA VSS VDD ENABLE sg13g2_inv_2_2/Y sg13g2_and2_2
+x3 sg13g2_inv_2_2/Y VDD sg13g2_inv_2_3/A VSS CLK sg13g2_nor2_2
+x4 CLKB VSS VDD ENABLE sg13g2_inv_2_4/Y sg13g2_and2_2
+x5 VSS VDD sg13g2_inv_2_0/Y CLK sg13g2_inv_2
+x6 VSS VDD sg13g2_inv_2_2/A sg13g2_inv_2_1/A sg13g2_inv_2
+x7 VSS VDD sg13g2_inv_2_2/Y sg13g2_inv_2_2/A sg13g2_inv_2
+x8 VSS VDD sg13g2_inv_2_4/A sg13g2_inv_2_3/A sg13g2_inv_2
+x9 VSS VDD sg13g2_inv_2_4/Y sg13g2_inv_2_4/A sg13g2_inv_2
+.ends
+

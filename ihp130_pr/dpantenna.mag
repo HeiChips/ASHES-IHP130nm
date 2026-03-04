@@ -1,0 +1,25 @@
+magic
+tech ihp-sg13g2
+timestamp 1772143227
+<< nwell >>
+rect -31 -31 109 109
+<< pdiode >>
+rect 0 64 78 78
+rect 0 48 14 64
+rect 30 48 48 64
+rect 64 48 78 64
+rect 0 30 78 48
+rect 0 14 14 30
+rect 30 14 48 30
+rect 64 14 78 30
+rect 0 0 78 14
+<< pdiodecont >>
+rect 14 48 30 64
+rect 48 48 64 64
+rect 14 14 30 30
+rect 48 14 64 30
+<< metal1 >>
+rect 9 14 69 64
+<< labels >>
+flabel comment s 39 39 39 39 0 FreeSans 200 0 0 0 dpant
+<< end >>

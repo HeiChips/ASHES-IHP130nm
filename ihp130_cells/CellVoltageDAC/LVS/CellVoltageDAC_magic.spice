@@ -1,0 +1,101 @@
+* NGSPICE file created from CellVoltageDAC.ext - technology: ihp-sg13g2
+
+.subckt ihp130_Resistor_String VREFout VREFin Node[0] Node[1] Node[2] Node[3]
+X0 Node[0] VREFin rsil l=10u w=0.59u
+X1 Node[2] a_4048_180# rsil l=10u w=0.59u
+X2 Node[1] a_4048_810# rsil l=10u w=0.59u
+X3 Node[3] a_4048_180# rsil l=10u w=0.59u
+X4 Node[1] a_4048_494# rsil l=10u w=0.59u
+X5 Node[2] a_4048_494# rsil l=10u w=0.59u
+X6 Node[0] a_4048_810# rsil l=10u w=0.59u
+X7 Node[3] VREFout rsil l=10u w=0.59u
+.ends
+
+.subckt x4TgateVinj VINJ INPUT[0] INPUT[1] INPUT[2] INPUT[3] OUTPUT GND SELECT[0]
++ SELECT[1] SELECT[2] SELECT[3]
+M0 a_550_n170# SELECT[1] VINJ VINJ sg13_hv_pmos ad=0.84785p pd=6.74u as=0.6642p ps=3.96u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M1 a_550_144# SELECT[0] VINJ VINJ sg13_hv_pmos ad=0.84185p pd=6.68u as=0.6642p ps=3.96u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M2 GND SELECT[1] a_550_n170# GND sg13_hv_nmos ad=0.598p pd=3.84u as=0.84785p ps=6.74u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M3 a_550_n486# SELECT[2] VINJ VINJ sg13_hv_pmos ad=0.84185p pd=6.68u as=0.6642p ps=3.96u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M4 INPUT[1] SELECT[1] OUTPUT GND sg13_hv_nmos ad=0.1302p pd=1.46u as=0.2821p ps=2.43u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M5 INPUT[3] SELECT[3] OUTPUT GND sg13_hv_nmos ad=0.1302p pd=1.46u as=0.2821p ps=2.43u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M6 GND SELECT[0] a_550_144# GND sg13_hv_nmos ad=0.598p pd=3.84u as=0.84185p ps=6.68u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M7 GND SELECT[2] a_550_n486# GND sg13_hv_nmos ad=0.598p pd=3.84u as=0.84185p ps=6.68u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M8 INPUT[0] SELECT[0] OUTPUT GND sg13_hv_nmos ad=0.1302p pd=1.46u as=0.2821p ps=2.43u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M9 a_550_n800# SELECT[3] VINJ VINJ sg13_hv_pmos ad=0.84785p pd=6.74u as=0.6642p ps=3.96u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M10 GND SELECT[3] a_550_n800# GND sg13_hv_nmos ad=0.598p pd=3.84u as=0.84785p ps=6.74u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M11 OUTPUT a_550_n486# INPUT[2] VINJ sg13_hv_pmos ad=0.2821p pd=2.43u as=0.1302p ps=1.46u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M12 OUTPUT a_550_n170# INPUT[1] VINJ sg13_hv_pmos ad=0.2821p pd=2.43u as=0.1302p ps=1.46u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M13 OUTPUT a_550_n800# INPUT[3] VINJ sg13_hv_pmos ad=0.2821p pd=2.43u as=0.1302p ps=1.46u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M14 INPUT[2] SELECT[2] OUTPUT GND sg13_hv_nmos ad=0.1302p pd=1.46u as=0.2821p ps=2.43u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M15 OUTPUT a_550_144# INPUT[0] VINJ sg13_hv_pmos ad=0.2821p pd=2.43u as=0.1302p ps=1.46u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+.ends
+
+.subckt ihp130_DAC_cell GND SELECT[0] SELECT[1] SELECT[2] SELECT[3] OUTPUT VINJ Vrefin
++ Vrefout
+Xihp130_Resistor_String_0 Vrefout Vrefin 4TgateVinj_0/INPUT[0] 4TgateVinj_0/INPUT[1]
++ 4TgateVinj_0/INPUT[2] 4TgateVinj_0/INPUT[3] ihp130_Resistor_String
+X4TgateVinj_0 VINJ 4TgateVinj_0/INPUT[0] 4TgateVinj_0/INPUT[1] 4TgateVinj_0/INPUT[2]
++ 4TgateVinj_0/INPUT[3] OUTPUT GND SELECT[0] SELECT[1] SELECT[2] SELECT[3] x4TgateVinj
+.ends
+
+.subckt ihp130_VinjNOR3 Input[0] Input[1] Input[2] VINJ GND Output
+M0 a_n114_408# Input[0] a_n398_408# VINJ sg13_hv_pmos ad=0.1869p pd=1.31u as=0.1869p ps=1.31u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+M1 GND Input[1] Output GND sg13_hv_nmos ad=0.46973p pd=3.34667u as=0.2383p ps=2.33u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M2 a_n398_408# Input[2] VINJ VINJ sg13_hv_pmos ad=0.1869p pd=1.31u as=0.3549p ps=2.64u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+M3 GND Input[0] Output GND sg13_hv_nmos ad=0.46973p pd=3.34667u as=0.2383p ps=2.33u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M4 Output Input[1] a_n114_408# VINJ sg13_hv_pmos ad=0.2383p pd=2.33u as=0.1869p ps=1.31u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+M5 Output Input[2] GND GND sg13_hv_nmos ad=0.2383p pd=2.33u as=0.46973p ps=3.34667u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+.ends
+
+.subckt ihp130_VinjInv2 Output Input VINJ GND
+M0 Output Input VINJ VINJ sg13_hv_pmos ad=0.4032p pd=2.34u as=0.3516p ps=2.68u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+M1 GND Input Output GND sg13_hv_nmos ad=0.348p pd=2.66u as=0.4032p ps=2.34u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+.ends
+
+.subckt ihp130_VinjDec2_to_4 Input[0] Input[1] ENABLE VINJ GND Output[0] Output[1]
++ Output[2] Output[3]
+Xihp130_VinjNOR3_0 Input[0] Input[1] ihp130_VinjInv2_2/Output VINJ GND Output[0] ihp130_VinjNOR3
+Xihp130_VinjNOR3_1 Input[0] ihp130_VinjInv2_1/Output ihp130_VinjInv2_2/Output VINJ
++ GND Output[1] ihp130_VinjNOR3
+Xihp130_VinjNOR3_2 ihp130_VinjInv2_0/Output Input[1] ihp130_VinjInv2_2/Output VINJ
++ GND Output[2] ihp130_VinjNOR3
+Xihp130_VinjNOR3_3 ihp130_VinjInv2_0/Output ihp130_VinjInv2_1/Output ihp130_VinjInv2_2/Output
++ VINJ GND Output[3] ihp130_VinjNOR3
+Xihp130_VinjInv2_0 ihp130_VinjInv2_0/Output Input[0] VINJ GND ihp130_VinjInv2
+Xihp130_VinjInv2_1 ihp130_VinjInv2_1/Output Input[1] VINJ GND ihp130_VinjInv2
+Xihp130_VinjInv2_2 ihp130_VinjInv2_2/Output ENABLE VINJ GND ihp130_VinjInv2
+.ends
+
+.subckt CellVoltageDAC Input[0] Input[1] ENABLE VINJ GND OUTPUT VREFin VREFout
+Xihp130_DAC_cell_0 GND ihp130_DAC_cell_0/SELECT[0] ihp130_DAC_cell_0/SELECT[1] ihp130_DAC_cell_0/SELECT[2]
++ ihp130_DAC_cell_0/SELECT[3] OUTPUT VINJ VREFin VREFout ihp130_DAC_cell
+Xihp130_VinjDec2_to_4_0 Input[0] Input[1] ENABLE VINJ GND ihp130_DAC_cell_0/SELECT[0]
++ ihp130_DAC_cell_0/SELECT[1] ihp130_DAC_cell_0/SELECT[2] ihp130_DAC_cell_0/SELECT[3]
++ ihp130_VinjDec2_to_4
+.ends
+

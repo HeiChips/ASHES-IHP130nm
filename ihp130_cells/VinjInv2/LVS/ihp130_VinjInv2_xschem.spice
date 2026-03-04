@@ -1,0 +1,6 @@
+** sch_path: /home/lhanks6/ASHES-IHP130nm/ihp130_cells/VinjInv2/ihp130_VinjInv2
+.subckt ihp130_VinjInv2 VINJ GND Input Output
+*.PININFO VINJ:I GND:I Input:I Output:O
+M1 Output Input GND GND sg13_hv_nmos w=0.42u l=0.53u ng=1 m=1
+M2 Output Input VINJ VINJ sg13_hv_pmos w=0.42u l=0.53u ng=1 m=1
+.ends

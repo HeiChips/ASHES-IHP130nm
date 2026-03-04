@@ -1,0 +1,38 @@
+* NGSPICE file created from 4TgateVinj.ext - technology: ihp-sg13g2
+
+.subckt 4TgateVinj VINJ INPUT[0] INPUT[1] INPUT[2] INPUT[3] OUTPUT GND SELECT[0]
++ SELECT[1] SELECT[2] SELECT[3]
+M0 a_550_n170# SELECT[1] VINJ VINJ sg13_hv_pmos ad=0.84785p pd=6.74u as=0.6642p ps=3.96u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M1 a_550_144# SELECT[0] VINJ VINJ sg13_hv_pmos ad=0.84185p pd=6.68u as=0.6642p ps=3.96u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M2 GND SELECT[1] a_550_n170# GND sg13_hv_nmos ad=0.598p pd=3.84u as=0.84785p ps=6.74u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M3 a_550_n486# SELECT[2] VINJ VINJ sg13_hv_pmos ad=0.84185p pd=6.68u as=0.6642p ps=3.96u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M4 INPUT[1] SELECT[1] OUTPUT GND sg13_hv_nmos ad=0.1302p pd=1.46u as=0.2821p ps=2.43u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M5 INPUT[3] SELECT[3] OUTPUT GND sg13_hv_nmos ad=0.1302p pd=1.46u as=0.2821p ps=2.43u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M6 GND SELECT[0] a_550_144# GND sg13_hv_nmos ad=0.598p pd=3.84u as=0.84185p ps=6.68u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M7 GND SELECT[2] a_550_n486# GND sg13_hv_nmos ad=0.598p pd=3.84u as=0.84185p ps=6.68u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M8 INPUT[0] SELECT[0] OUTPUT GND sg13_hv_nmos ad=0.1302p pd=1.46u as=0.2821p ps=2.43u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M9 a_550_n800# SELECT[3] VINJ VINJ sg13_hv_pmos ad=0.84785p pd=6.74u as=0.6642p ps=3.96u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M10 GND SELECT[3] a_550_n800# GND sg13_hv_nmos ad=0.598p pd=3.84u as=0.84785p ps=6.74u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M11 OUTPUT a_550_n486# INPUT[2] VINJ sg13_hv_pmos ad=0.2821p pd=2.43u as=0.1302p ps=1.46u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M12 OUTPUT a_550_n170# INPUT[1] VINJ sg13_hv_pmos ad=0.2821p pd=2.43u as=0.1302p ps=1.46u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M13 OUTPUT a_550_n800# INPUT[3] VINJ sg13_hv_pmos ad=0.2821p pd=2.43u as=0.1302p ps=1.46u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+M14 INPUT[2] SELECT[2] OUTPUT GND sg13_hv_nmos ad=0.1302p pd=1.46u as=0.2821p ps=2.43u w=0.42u l=0.5u
+**devattr s=5712,304 d=5712,304
+M15 OUTPUT a_550_144# INPUT[0] VINJ sg13_hv_pmos ad=0.2821p pd=2.43u as=0.1302p ps=1.46u w=0.42u l=0.5u
+**devattr s=6216,316 d=6216,316
+.ends
+

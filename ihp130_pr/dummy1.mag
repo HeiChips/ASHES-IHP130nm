@@ -1,0 +1,10 @@
+magic
+tech ihp-sg13g2
+timestamp 1772143227
+<< metal1 >>
+rect -50 -50 50 50
+<< labels >>
+flabel comment s 0 -30 0 -30 0 FreeSans 120 0 0 0 net=NoName
+flabel comment s 0 0 0 0 0 FreeSans 120 0 0 0 layer=M1
+flabel comment s 0 30 0 30 0 FreeSans 150 0 0 0 dummy1
+<< end >>

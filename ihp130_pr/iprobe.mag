@@ -1,0 +1,17 @@
+magic
+tech ihp-sg13g2
+timestamp 1772143227
+<< metal1 >>
+rect -60 0 -50 500
+rect 50 0 60 500
+<< iprobe >>
+rect -50 0 50 500
+<< labels >>
+flabel comment s 55 250 55 250 0 FreeSans 80 90 0 0 MINUS
+flabel comment s -55 250 -55 250 0 FreeSans 80 90 0 0 PLUS
+flabel comment s 0 250 0 250 0 FreeSans 80 90 0 0 iprobe_M1
+flabel comment s -55 250 -55 250 0 FreeSans 80 90 0 0 PLUS
+flabel comment s 55 250 55 250 0 FreeSans 80 90 0 0 MINUS
+<< properties >>
+string path 0.000 0.000 0.000 25.000 
+<< end >>

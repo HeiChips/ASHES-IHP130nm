@@ -1,0 +1,34 @@
+Flattening unmatched subcell ihp130_TgateVinj02 in circuit 4TgateVinj (1)(4 instances)
+
+Subcircuit summary:
+Circuit 1: 4TgateVinj                      |Circuit 2: 4TgateVinj                      
+-------------------------------------------|-------------------------------------------
+sg13_hv_pmos (8)                           |sg13_hv_pmos (8)                           
+sg13_hv_nmos (8)                           |sg13_hv_nmos (8)                           
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: 4TgateVinj                      |Circuit 2: 4TgateVinj                      
+-------------------------------------------|-------------------------------------------
+OUTPUT                                     |OUTPUT                                     
+INPUT[2]                                   |INPUT[2]                                   
+INPUT[0]                                   |INPUT[0]                                   
+INPUT[3]                                   |INPUT[3]                                   
+INPUT[1]                                   |INPUT[1]                                   
+VINJ                                       |VINJ                                       
+GND                                        |GND                                        
+SELECT[3]                                  |SELECT[3]                                  
+SELECT[2]                                  |SELECT[2]                                  
+SELECT[0]                                  |SELECT[0]                                  
+SELECT[1]                                  |SELECT[1]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes 4TgateVinj and 4TgateVinj are equivalent.
+
+Final result: Circuits match uniquely.
+.

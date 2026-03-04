@@ -49,48 +49,80 @@ C {iopin.sym} 110 350 0 0 {name=p1 lab=VREFout
 C {iopin.sym} -30 -450 2 0 {name=p8 lab=VREFin
 
 }
-C {opin.sym} 330 -50 0 0 {name=p2 lab=Node[3:0]}
+C {opin.sym} 330 -50 0 0 {name=p2 lab=Node[0:3]}
 C {lab_pin.sym} 150 -350 2 0 {name=p59 sig_type=std_logic lab=Node[0]}
 C {lab_pin.sym} 150 -150 2 0 {name=p3 sig_type=std_logic lab=Node[1]}
 C {lab_pin.sym} 150 50 2 0 {name=p4 sig_type=std_logic lab=Node[2]}
 C {lab_pin.sym} 150 250 2 0 {name=p5 sig_type=std_logic lab=Node[3]}
-C {res.sym} 10 -400 0 0 {name=R0
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 10 -300 0 0 {name=R1
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 10 -200 0 0 {name=R2
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 10 -100 0 0 {name=R3
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 10 0 0 0 {name=R4
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 10 100 0 0 {name=R5
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 10 200 0 0 {name=R6
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {res.sym} 10 300 0 0 {name=R7
-value=1k
-footprint=1206
-device=resistor
-m=1}
+C {sg13g2_pr/rsil.sym} 10 -400 0 0 {name=R8
+w=.59e-6
+l=10e-6
+model=rsil
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rsil.sym} 10 -300 0 0 {name=R1
+w=.59e-6
+l=10e-6
+model=rsil
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rsil.sym} 10 -200 0 0 {name=R2
+w=.59e-6
+l=10e-6
+model=rsil
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rsil.sym} 10 -100 0 0 {name=R3
+w=.59e-6
+l=10e-6
+model=rsil
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rsil.sym} 10 0 0 0 {name=R4
+w=.59e-6
+l=10e-6
+model=rsil
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rsil.sym} 10 100 0 0 {name=R5
+w=.59e-6
+l=10e-6
+model=rsil
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rsil.sym} 10 200 0 0 {name=R6
+w=.59e-6
+l=10e-6
+model=rsil
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rsil.sym} 10 300 0 0 {name=R7
+w=.59e-6
+l=10e-6
+model=rsil
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}

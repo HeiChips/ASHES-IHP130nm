@@ -1,0 +1,42 @@
+timestamp 1772130871
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+parameters sg13_lv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_lv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+port "X" 2 355 444 421 632 m1
+port "B" 5 156 294 234 374 m1
+port "A" 6 21 81 156 192 m1
+port "VDD" 4 0 712 576 800 m1
+port "VSS" 3 0 -44 576 44 m1
+node "a_139_160#" 0 6.34347 139 160 ndif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "X" 1 255.32 355 444 m1 0 0 0 0 26988 1166 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_45_160#" 2 566.246 45 160 ndif 0 0 0 0 34474 1598 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 0 202.724 156 294 m1 0 0 0 0 6240 316 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 0 489.962 21 81 m1 0 0 0 0 14985 492 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 2 201.013 0 712 m1 0 0 0 0 85424 2664 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 0 -44 m1 0 0 0 0 71748 2138 0 0 0 0 0 0 0 0 0 0 0 0
+cap "X" "a_45_160#" 179.071
+cap "A" "a_45_160#" 103.871
+cap "A" "X" 0.454193
+cap "a_45_160#" "B" 251.672
+cap "X" "B" 6.16046
+cap "a_139_160#" "a_45_160#" 3.83719
+cap "a_139_160#" "X" 1.69491
+cap "VDD" "a_45_160#" 447.259
+cap "VDD" "X" 341.885
+cap "A" "B" 60.9189
+cap "A" "a_139_160#" 3.5311
+cap "A" "VDD" 75.1396
+cap "a_139_160#" "B" 5.2708
+cap "VDD" "B" 68.1282
+device msubckt sg13_lv_nmos 419 140 420 141 l=26 w=148 "VSS" "a_45_160#" 52 0 "X" 148 5624,224 "VSS" 148 11248,448
+device msubckt sg13_lv_nmos 317 140 318 141 l=26 w=148 "VSS" "a_45_160#" 52 0 "VSS" 148 5324,224 "X" 148 5624,224
+device msubckt sg13_lv_nmos 215 160 216 161 l=26 w=128 "VSS" "B" 52 0 "a_139_160#" 128 4864,204 "VSS" 128 5324,224
+device msubckt sg13_lv_nmos 113 160 114 161 l=26 w=128 "VSS" "A" 52 0 "a_45_160#" 128 8704,392 "a_139_160#" 128 4864,204
+device msubckt sg13_lv_pmos 419 412 420 413 l=26 w=224 "VDD" "a_45_160#" 52 0 "X" 224 8512,300 "VDD" 224 17024,600
+device msubckt sg13_lv_pmos 317 412 318 413 l=26 w=224 "VDD" "a_45_160#" 52 0 "VDD" 224 7672,300 "X" 224 8512,300
+device msubckt sg13_lv_pmos 215 468 216 469 l=26 w=168 "VDD" "B" 52 0 "a_45_160#" 168 6384,244 "VDD" 168 7672,300
+device msubckt sg13_lv_pmos 113 468 114 469 l=26 w=168 "VDD" "A" 52 0 "VDD" 168 11424,472 "a_45_160#" 168 6384,244

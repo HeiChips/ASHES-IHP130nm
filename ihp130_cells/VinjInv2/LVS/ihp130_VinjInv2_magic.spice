@@ -1,0 +1,9 @@
+* NGSPICE file created from ihp130_VinjInv2.ext - technology: ihp-sg13g2
+
+.subckt ihp130_VinjInv2 Output Input VINJ GND
+M0 Output Input VINJ VINJ sg13_hv_pmos ad=0.4032p pd=2.34u as=0.3516p ps=2.68u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+M1 GND Input Output GND sg13_hv_nmos ad=0.348p pd=2.66u as=0.4032p ps=2.34u w=0.42u l=0.53u
+**devattr s=5712,304 d=5712,304
+.ends
+
