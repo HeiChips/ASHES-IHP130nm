@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1773115005
+timestamp 1773200727
 << error_s >>
 rect 4471 36685 4579 36805
 rect 4723 36685 4831 36805
@@ -4700,6 +4700,10 @@ rect 0 3908 80 3988
 rect 0 3068 80 3148
 rect 0 2228 80 2308
 << metal6 >>
+rect 32670 154 34670 39754
+rect 37392 154 39392 39754
+rect 56670 154 58670 39754
+rect 61392 154 63392 39754
 rect 80670 154 82670 39754
 rect 85392 154 87392 39754
 use 4I2V  4I2V_0 ~/ASHES-IHP130nm/ihp130_cells/4I2V
@@ -4991,10 +4995,18 @@ flabel metal3 s 0 33308 80 33388 0 FreeSans 320 0 0 0 uio_in[5]
 port 20 nsew signal input
 flabel metal3 s 0 35828 80 35908 0 FreeSans 320 0 0 0 ena
 port 5 nsew signal input
-flabel space 80666 38894 82674 39754 1 FreeSans 3200 0 0 0 VPWR
-port 47 n
-flabel space 85388 38896 87396 39756 1 FreeSans 3200 0 0 0 GND
-port 48 n
+flabel metal6 80670 38886 82670 39754 1 FreeSans 960 0 0 0 VPWR
+port 49 n power bidirectional
+flabel metal6 85392 38886 87392 39754 1 FreeSans 960 0 0 0 GND
+port 50 n ground bidirectional
+flabel metal6 56670 38886 58670 39754 1 FreeSans 960 0 0 0 VPWR
+port 49 n power bidirectional
+flabel metal6 61392 38886 63392 39754 1 FreeSans 960 0 0 0 GND
+port 50 n ground bidirectional
+flabel metal6 37392 38886 39392 39754 1 FreeSans 960 0 0 0 GND
+port 50 n ground bidirectional
+flabel metal6 32670 38886 34670 39754 1 FreeSans 960 0 0 0 VPWR
+port 49 n power bidirectional
 << properties >>
 string FIXED_BBOX 0 0 100000 40000
 << end >>
