@@ -1,6 +1,8 @@
 magic
 tech ihp-sg13g2
 timestamp 1772140309
+<< checkpaint >>
+rect -13939 -12989 16397 17845
 << metal1 >>
 rect 1052 2580 1198 2613
 rect 1329 2580 1437 2613
@@ -183,11 +185,11 @@ timestamp 1772130871
 transform 1 0 1565 0 -1 2428
 box -24 -28 216 417
 use sg13g2_nor2_2  sg13g2_nor2_2_0 ~/ASHES-IHP130nm/ihp130_dig
-timestamp 1772130871
+timestamp 1774112083
 transform 1 0 1085 0 1 2428
 box -24 -28 312 417
 use sg13g2_nor2_2  sg13g2_nor2_2_1
-timestamp 1772130871
+timestamp 1774112083
 transform 1 0 1085 0 -1 2428
 box -24 -28 312 417
 << labels >>

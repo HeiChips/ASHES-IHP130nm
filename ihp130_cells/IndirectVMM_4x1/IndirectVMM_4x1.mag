@@ -1,6 +1,6 @@
 magic
 tech ihp-sg13g2
-timestamp 1771701787
+timestamp 1774106011
 << nwell >>
 rect 510 587 890 805
 rect 510 306 843 587
@@ -20,7 +20,7 @@ rect 606 314 656 356
 rect 697 288 747 330
 rect 606 217 656 259
 rect 690 217 740 259
-<< hvvaractor >>
+<< varactor >>
 rect 1065 643 1119 708
 rect 1421 645 1450 695
 rect 1065 529 1119 594
