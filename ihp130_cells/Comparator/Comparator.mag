@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1773859946
+timestamp 1774294889
 << nwell >>
 rect -3226 1524 12192 2874
 rect -3226 -320 2344 1524
@@ -2013,7 +2013,7 @@ rect 484 -192 662 -94
 rect 1012 -192 1058 -94
 rect -3392 -220 1058 -192
 use sg13g2_buf_4  sg13g2_buf_4_0 ~/ASHES-IHP130nm/ihp130_dig
-timestamp 1772130871
+timestamp 1774294889
 transform -1 0 13342 0 1 822
 box -48 -56 816 834
 << labels >>

@@ -1,12 +1,8 @@
 magic
 tech ihp-sg13g2
-timestamp 1774112083
-<< checkpaint >>
-rect -14466 15173 15720 15193
-rect -14876 15086 15720 15173
-rect -14920 -15000 15720 15086
+timestamp 1774294889
 use cap_cmim_5WSPTJ  cap_cmim_5WSPTJ_0
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 400 0 1 400
 box -400 -400 400 400
 << end >>

@@ -1,6 +1,6 @@
 magic
 tech ihp-sg13g2
-timestamp 1774106011
+timestamp 1774294889
 << nwell >>
 rect 998 3 1013 653
 << metal1 >>
@@ -40,11 +40,11 @@ rect 998 165 1013 195
 rect -16 87 7 133
 rect 998 95 1013 125
 use IndirectVMM_4x1  IndirectVMM_4x1_0 ~/ASHES-IHP130nm/ihp130_cells/IndirectVMM_4x1
-timestamp 1774106011
+timestamp 1774294889
 transform 1 0 -526 0 1 -152
 box 510 155 1524 805
 use IndirectVMM_4x1  IndirectVMM_4x1_1
-timestamp 1774106011
+timestamp 1774294889
 transform -1 0 2537 0 1 -152
 box 510 155 1524 805
 << labels >>

@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1774206316
+timestamp 1774294889
 << nwell >>
 rect -938 -7588 24654 -4728
 << nmos >>
@@ -3758,31 +3758,31 @@ rect -4060 -7434 -3926 -6834
 rect -3326 -7434 -3186 -6834
 rect -4060 -7594 -3186 -7434
 use cmim  cmim_0 ~/ASHES-IHP130nm/ihp130_pr
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 -3218 0 1 74
 box 0 0 1600 1600
 use cmim  cmim_1
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 -3218 0 1 -1564
 box 0 0 1600 1600
 use cmim  cmim_2
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 -3218 0 1 -3202
 box 0 0 1600 1600
 use cmim  cmim_3
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 -4856 0 1 -3202
 box 0 0 1600 1600
 use cmim  cmim_4
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 -4856 0 1 -1564
 box 0 0 1600 1600
 use cmim  cmim_5
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 -4856 0 1 74
 box 0 0 1600 1600
 use cmim  cmim_6
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 -6494 0 1 -3202
 box 0 0 1600 1600
 << labels >>

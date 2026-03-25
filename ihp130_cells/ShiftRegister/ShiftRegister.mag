@@ -1,6 +1,6 @@
 magic
 tech ihp-sg13g2
-timestamp 1772507446
+timestamp 1774294889
 << metal1 >>
 rect -16 357 3536 401
 rect 1340 221 1444 227
@@ -105,27 +105,27 @@ rect 2030 64 3560 86
 rect 254 62 3560 64
 rect -40 58 3560 62
 use sg13g2_buf_1  sg13g2_buf_1_0 ~/ASHES-IHP130nm/ihp130_dig
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 1376 0 1 1
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_1
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 1568 0 1 1
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_2
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 3152 0 1 1
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_3
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 3344 0 1 1
 box -24 -28 216 417
 use sg13g2_dfrbp_1  sg13g2_dfrbp_1_0 ~/ASHES-IHP130nm/ihp130_dig
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 -16 0 1 1
 box -24 -28 1416 417
 use sg13g2_dfrbp_1  sg13g2_dfrbp_1_1
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 1760 0 1 1
 box -24 -28 1416 417
 << labels >>

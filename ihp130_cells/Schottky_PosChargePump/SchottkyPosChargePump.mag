@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1774138541
+timestamp 1774296007
 << metal1 >>
 rect 3682 758 3684 896
 rect 4368 668 4540 3124
@@ -591,95 +591,95 @@ rect 9234 -692 9406 224
 rect 10324 -692 10514 224
 rect 9234 -910 10514 -692
 use cmim  cmim_0 ~/ASHES-IHP130nm/ihp130_pr
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 2274 0 1 3530
 box 0 0 1600 1600
 use cmim  cmim_1
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 3974 0 1 3530
 box 0 0 1600 1600
 use cmim  cmim_2
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 5674 0 1 3530
 box 0 0 1600 1600
 use cmim  cmim_3
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 7374 0 1 3530
 box 0 0 1600 1600
 use cmim  cmim_4
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 9074 0 1 3530
 box 0 0 1600 1600
 use cmim  cmim_5
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 10774 0 1 3530
 box 0 0 1600 1600
 use cmim  cmim_8
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 2274 0 1 -1070
 box 0 0 1600 1600
 use cmim  cmim_9
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 3974 0 1 -1070
 box 0 0 1600 1600
 use cmim  cmim_10
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 5674 0 1 -1070
 box 0 0 1600 1600
 use cmim  cmim_11
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 7374 0 1 -1070
 box 0 0 1600 1600
 use cmim  cmim_12
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 9074 0 1 -1070
 box 0 0 1600 1600
 use NonOvCLKGen  NonOvCLKGen_0 ~/ASHES-IHP130nm/ihp130_cells/NonOvCLKGen
-timestamp 1772140309
+timestamp 1774294889
 transform 1 0 -1716 0 1 -2560
 box 1738 4022 4138 5690
 use schottky_nbl1  schottky_nbl1_0 ~/ASHES-IHP130nm/ihp130_pr
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 3728 0 -1 2706
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_1
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 4940 0 -1 2706
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_2
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 6152 0 -1 2706
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_3
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 7364 0 -1 2706
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_4
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 8576 0 -1 2706
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_5
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 9788 0 -1 2706
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_7
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 8576 0 -1 1394
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_8
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 7364 0 -1 1394
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_9
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 6152 0 -1 1394
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_10
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 4940 0 -1 1394
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_11
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 3728 0 -1 1394
 box -486 -502 726 810
 use sg13g2_buf_16  sg13g2_buf_16_0 ~/ASHES-IHP130nm/ihp130_dig

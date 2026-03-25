@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1772473708
+timestamp 1774294889
 << nwell >>
 rect -420 -956 186 76
 << metal1 >>
@@ -180,31 +180,31 @@ rect 1324 -900 1354 -860
 rect 1394 -900 1424 -860
 rect 1348 -906 1400 -900
 use ihp130_VinjInv2  ihp130_VinjInv2_0 ~/ASHES-IHP130nm/ihp130_cells/VinjInv2
-timestamp 1771802919
+timestamp 1774294889
 transform 1 0 392 0 1 -272
 box -812 272 322 616
 use ihp130_VinjInv2  ihp130_VinjInv2_1
-timestamp 1771802919
+timestamp 1774294889
 transform 1 0 392 0 1 -616
 box -812 272 322 616
 use ihp130_VinjInv2  ihp130_VinjInv2_2
-timestamp 1771802919
+timestamp 1774294889
 transform 1 0 392 0 1 -960
 box -812 272 322 616
 use ihp130_VinjNOR3  ihp130_VinjNOR3_0 ~/ASHES-IHP130nm/ihp130_cells/VinjNOR3
-timestamp 1772471325
+timestamp 1774294889
 transform 1 0 2232 0 1 -276
 box -808 276 1500 620
 use ihp130_VinjNOR3  ihp130_VinjNOR3_1
-timestamp 1772471325
+timestamp 1774294889
 transform 1 0 2232 0 1 -594
 box -808 276 1500 620
 use ihp130_VinjNOR3  ihp130_VinjNOR3_2
-timestamp 1772471325
+timestamp 1774294889
 transform 1 0 2232 0 1 -912
 box -808 276 1500 620
 use ihp130_VinjNOR3  ihp130_VinjNOR3_3
-timestamp 1772471325
+timestamp 1774294889
 transform 1 0 2232 0 1 -1232
 box -808 276 1500 620
 << labels >>

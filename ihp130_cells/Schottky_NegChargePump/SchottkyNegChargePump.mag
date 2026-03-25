@@ -1,14 +1,7 @@
 magic
 tech ihp-sg13g2
 magscale 1 2
-timestamp 1774133813
-<< checkpaint >>
-rect -23910 30912 36450 30966
-rect -26642 -29272 36450 30912
-rect -26642 -29278 33506 -29272
-<< error_s >>
-rect 6202 894 6338 908
-rect 3358 722 3506 762
+timestamp 1774294889
 << metal1 >>
 rect 4412 1982 4532 3172
 rect 5580 1982 5754 3122
@@ -521,55 +514,55 @@ rect 5834 -582 6152 18
 rect 6752 -582 7114 18
 rect 5834 -910 7114 -582
 use cmim  cmim_0 ~/ASHES-IHP130nm/ihp130_pr
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 2274 0 1 3530
 box 0 0 1600 1600
 use cmim  cmim_1
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 3974 0 1 3530
 box 0 0 1600 1600
 use cmim  cmim_2
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 5674 0 1 3530
 box 0 0 1600 1600
 use cmim  cmim_8
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 2274 0 1 -1070
 box 0 0 1600 1600
 use cmim  cmim_9
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 3974 0 1 -1070
 box 0 0 1600 1600
 use cmim  cmim_10
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 5674 0 1 -1070
 box 0 0 1600 1600
 use NonOvCLKGen  NonOvCLKGen_0 ~/ASHES-IHP130nm/ihp130_cells/NonOvCLKGen
-timestamp 1772140309
+timestamp 1774294889
 transform 1 0 -1716 0 1 -2560
 box 1738 4022 4138 5690
 use schottky_nbl1  schottky_nbl1_0 ~/ASHES-IHP130nm/ihp130_pr
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 3728 0 1 2398
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_1
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 4940 0 1 2398
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_2
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 6152 0 1 2398
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_3
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 6152 0 1 1086
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_10
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 4940 0 1 1086
 box -486 -502 726 810
 use schottky_nbl1  schottky_nbl1_11
-timestamp 1774112083
+timestamp 1774294889
 transform 1 0 3728 0 1 1086
 box -486 -502 726 810
 << labels >>

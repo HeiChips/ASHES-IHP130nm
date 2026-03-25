@@ -1,6 +1,6 @@
 magic
 tech ihp-sg13g2
-timestamp 1772558928
+timestamp 1774294889
 << error_s >>
 rect 77 880 89 900
 rect 89 852 118 880
@@ -320,55 +320,55 @@ rect 684 925 1094 945
 rect 1114 925 1119 945
 rect 657 920 1119 925
 use 4TgateVinj  4TgateVinj_0 ~/ASHES-IHP130nm/ihp130_cells/4TgateVinj
-timestamp 1772043389
+timestamp 1774294889
 transform -1 0 2958 0 1 1762
 box 0 -472 958 178
 use sg13g2_buf_1  sg13g2_buf_1_0 ~/ASHES-IHP130nm/ihp130_dig
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 1392 0 1 2000
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_1
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 1584 0 1 2000
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_2
-timestamp 1772130871
+timestamp 1774294889
 transform -1 0 192 0 -1 2000
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_3
-timestamp 1772130871
+timestamp 1774294889
 transform -1 0 384 0 -1 2000
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_8
-timestamp 1772130871
+timestamp 1774294889
 transform -1 0 384 0 -1 1244
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_9
-timestamp 1772130871
+timestamp 1774294889
 transform -1 0 192 0 -1 1244
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_10
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 1584 0 1 1244
 box -24 -28 216 417
 use sg13g2_buf_1  sg13g2_buf_1_11
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 1392 0 1 1244
 box -24 -28 216 417
 use sg13g2_dfrbp_1  sg13g2_dfrbp_1_0 ~/ASHES-IHP130nm/ihp130_dig
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 0 0 1 2000
 box -24 -28 1416 417
 use sg13g2_dfrbp_1  sg13g2_dfrbp_1_1
-timestamp 1772130871
+timestamp 1774294889
 transform -1 0 1776 0 -1 2000
 box -24 -28 1416 417
 use sg13g2_dfrbp_1  sg13g2_dfrbp_1_4
-timestamp 1772130871
+timestamp 1774294889
 transform 1 0 0 0 1 1244
 box -24 -28 1416 417
 use sg13g2_dfrbp_1  sg13g2_dfrbp_1_5
-timestamp 1772130871
+timestamp 1774294889
 transform -1 0 1776 0 -1 1244
 box -24 -28 1416 417
 << labels >>
